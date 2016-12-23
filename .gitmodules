@@ -1,0 +1,4 @@
+[submodule "smartcampus.mobilityservice"]
+	path = smartcampus.mobilityservice
+	url = https://github.com/smartcommunitylab/smartcampus.mobilityservice.git
+	branch = bologna
