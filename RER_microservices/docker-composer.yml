@@ -1,0 +1,124 @@
+gtfs-blq:
+  ports:
+  - 9020:9000/tcp
+  - 9021:9001/tcp
+  environment:
+    JDEP_DB_DATABASE: blq
+    JDEP_DB_HOST: database
+    JDEP_DB_PASSWORD: postgres
+    JDEP_DB_PORT: '5432'
+    JDEP_DB_USERNAME: postgres
+  tty: true
+  image: smallproject/gtfs_core
+  links:
+  - postgres:database
+  stdin_open: true
+api-gateway:
+  ports:
+  - 8018:9080/tcp
+  - 8020:9081/tcp
+  - 8017:9082/tcp
+  environment:
+    JDEP_API_ROUTER: socket://small.disi.unibo.it:8018
+  tty: true
+  image: smallproject/api-gateway
+  links:
+  - gtfs-bologna:gtfs-bologna
+  - 'blind-unibo:'
+  stdin_open: true
+gtfs-bologna:
+  ports:
+  - 9000:9000/tcp
+  - 9001:9001/tcp
+  environment:
+    JDEP_DB_DATABASE: bologna
+    JDEP_DB_HOST: database
+    JDEP_DB_PASSWORD: postgres
+    JDEP_DB_PORT: '5432'
+    JDEP_DB_USERNAME: postgres
+  tty: true
+  image: smallproject/gtfs_core
+  links:
+  - postgres:database
+  stdin_open: true
+webdemo:
+  ports:
+  - 8001:10001/tcp
+  - 8002:10002/tcp
+  environment:
+    JDEP_BUS_CHECK: socket://bus-check:9004
+  tty: true
+  image: smallproject/webdemo
+  links:
+  - 'bus-check:'
+  stdin_open: true
+bus-check:
+  ports:
+  - 9004:9004/tcp
+  environment:
+    JDEP_GTFS_CORE: socket://database:9000
+  tty: true
+  image: smallproject/bus_check
+  links:
+  - gtfs-bologna:database
+  stdin_open: true
+reportDelay:
+  tty: true
+  image: smallproject/report_delay
+  links:
+  - bus-eta:buseta
+  stdin_open: true
+gtfs-ferrara:
+  ports:
+  - 9010:9000/tcp
+  - 9011:9001/tcp
+  environment:
+    JDEP_DB_DATABASE: ferrara
+    JDEP_DB_HOST: database
+    JDEP_DB_PASSWORD: postgres
+    JDEP_DB_PORT: '5432'
+    JDEP_DB_USERNAME: postgres
+  tty: true
+  image: smallproject/gtfs_core
+  links:
+  - postgres:database
+  stdin_open: true
+bus-stop-retriever:
+  ports:
+  - 9005:9005/tcp
+  environment:
+    JDEP_GTFS_CORE: socket://130.136.37.14:9000
+  tty: true
+  image: smallproject/bus_stop_retriever
+  links:
+  - 'gtfs-bologna:'
+postgres:
+  tty: true
+  entrypoint:
+  - /docker-entrypoint.sh
+  command:
+  - postgres
+  image: postgres
+blind-unibo:
+  ports:
+  - 9003:9003/tcp
+  environment:
+    JDEP_GTFS_CORE: socket://130.136.37.14:9000
+    JDEP_BUS_STOP_RETRIEVER: socket://bus-stop-retriever:9005
+    JDEP_BUS_ETA: socket://bus-eta:9006
+  tty: true
+  image: smallproject/blind_unibo
+  links:
+  - 'bus-eta:'
+  - 'gtfs-bologna:'
+  - 'bus-stop-retriever:'
+  stdin_open: true
+bus-eta:
+  ports:
+  - 9006:9006/tcp
+  environment:
+    JDEP_CACHE_TIMEOUT: '30000'
+    JDEP_HELLO_BUS_TIMEOUT: '5000'
+  tty: true
+  image: smallproject/bus_eta
+  stdin_open: true

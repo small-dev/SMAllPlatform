@@ -1,0 +1,2203 @@
+[bus_check.ol] 	1.	^ LOAD	Java Service Loader			joliex.io.ConsoleService
+[bus_check.ol] 	2.	^ LOAD	Java Service Loader			joliex.lang.RuntimeService
+[bus_check.ol] 	3.	^ LOAD	Java Service Loader			joliex.util.TimeService
+[bus_check.ol] 	4.	^ LOAD	Java Service Loader			joliex.util.StringUtils
+[bus_check.ol] 	5.	<< SR	getLocalLocation@Runtime			SENDING	MSG_ID:1
+						Value:
+
+[bus_check.ol] 	6.	<< SR	getLocalLocation@Runtime			SENT	MSG_ID:1
+						Value:
+
+[bus_check.ol] 	7.	<< SR	getLocalLocation@Runtime			RECEIVED	MSG_ID:1
+						Value: = jolie.net.LocalCommChannel@706543f2 : jolie.net.LocalCommChannel
+
+[bus_check.ol] 	8.	>> RR	tripMonitor			RECEIVED	MSG_ID:1
+						Value:
+							.trip_id[0] = 598_2605635 : java.lang.String
+
+[bus_check.ol] 	9.	<< SR	getTrip@GTFSCore			SENDING	MSG_ID:2
+						Value:
+							.trip_id[0] = 598_2605635 : java.lang.String
+
+[bus_check.ol] 	10.	<< SR	getTrip@GTFSCore			SENT	MSG_ID:2
+						Value:
+							.trip_id[0] = 598_2605635 : java.lang.String
+
+[bus_check.ol] 	11.	<< SR	getTrip@GTFSCore			RECEIVED	MSG_ID:2
+						Value:
+							.direction_id[0] = 0 : java.lang.Integer
+							.route_id[0] = 19 : java.lang.String
+							.service_id[0] = 598_94631 : java.lang.String
+							.id[0] = 598_2605635 : java.lang.String
+							.stops[0]
+								.stop_lon[0] = 11.277344 : java.lang.Double
+								.stop_sequence[0] = 1 : java.lang.Integer
+								.stop_id[0] = 6238 : java.lang.String
+								.stop_lat[0] = 44.500038 : java.lang.Double
+								.departure_time[0] = 18:06:00 : java.lang.String
+								.stop_name[0] = CASTELDEBOLE : java.lang.String
+							.stops[1]
+								.stop_lon[0] = 11.275167 : java.lang.Double
+								.stop_sequence[0] = 2 : java.lang.Integer
+								.stop_id[0] = 6236 : java.lang.String
+								.stop_lat[0] = 44.498932 : java.lang.Double
+								.departure_time[0] = 18:06:42 : java.lang.String
+								.stop_name[0] = ROTTA : java.lang.String
+							.stops[2]
+								.stop_lon[0] = 11.275441 : java.lang.Double
+								.stop_sequence[0] = 3 : java.lang.Integer
+								.stop_id[0] = 6234 : java.lang.String
+								.stop_lat[0] = 44.500912 : java.lang.Double
+								.departure_time[0] = 18:07:42 : java.lang.String
+								.stop_name[0] = SALVEMINI : java.lang.String
+							.stops[3]
+								.stop_lon[0] = 11.277596 : java.lang.Double
+								.stop_sequence[0] = 4 : java.lang.Integer
+								.stop_id[0] = 6230 : java.lang.String
+								.stop_lat[0] = 44.503174 : java.lang.Double
+								.departure_time[0] = 18:08:45 : java.lang.String
+								.stop_name[0] = GALEAZZA : java.lang.String
+							.stops[4]
+								.stop_lon[0] = 11.278428 : java.lang.Double
+								.stop_sequence[0] = 5 : java.lang.Integer
+								.stop_id[0] = 6228 : java.lang.String
+								.stop_lat[0] = 44.505196 : java.lang.Double
+								.departure_time[0] = 18:09:31 : java.lang.String
+								.stop_name[0] = DE NICOLA : java.lang.String
+							.stops[5]
+								.stop_lon[0] = 11.279891 : java.lang.Double
+								.stop_sequence[0] = 6 : java.lang.Integer
+								.stop_id[0] = 6226 : java.lang.String
+								.stop_lat[0] = 44.505241 : java.lang.Double
+								.departure_time[0] = 18:09:59 : java.lang.String
+								.stop_name[0] = LA MALFA : java.lang.String
+							.stops[6]
+								.stop_lon[0] = 11.281591 : java.lang.Double
+								.stop_sequence[0] = 7 : java.lang.Integer
+								.stop_id[0] = 6224 : java.lang.String
+								.stop_lat[0] = 44.505047 : java.lang.Double
+								.departure_time[0] = 18:10:24 : java.lang.String
+								.stop_name[0] = EINAUDI : java.lang.String
+							.stops[7]
+								.stop_lon[0] = 11.284555 : java.lang.Double
+								.stop_sequence[0] = 8 : java.lang.Integer
+								.stop_id[0] = 6222 : java.lang.String
+								.stop_lat[0] = 44.506626 : java.lang.Double
+								.departure_time[0] = 18:11:27 : java.lang.String
+								.stop_name[0] = TOGLIATTI PIETRA : java.lang.String
+							.stops[8]
+								.stop_lon[0] = 11.294084 : java.lang.Double
+								.stop_sequence[0] = 9 : java.lang.Integer
+								.stop_id[0] = 6220 : java.lang.String
+								.stop_lat[0] = 44.503784 : java.lang.Double
+								.departure_time[0] = 18:13:46 : java.lang.String
+								.stop_name[0] = CENTRO VITTORIA - MAST : java.lang.String
+							.stops[9]
+								.stop_lon[0] = 11.299116 : java.lang.Double
+								.stop_sequence[0] = 10 : java.lang.Integer
+								.stop_id[0] = 6218 : java.lang.String
+								.stop_lat[0] = 44.502323 : java.lang.Double
+								.departure_time[0] = 18:15:00 : java.lang.String
+								.stop_name[0] = TOGLIATTI : java.lang.String
+							.stops[10]
+								.stop_lon[0] = 11.308243 : java.lang.Double
+								.stop_sequence[0] = 11 : java.lang.Integer
+								.stop_id[0] = 6212 : java.lang.String
+								.stop_lat[0] = 44.501381 : java.lang.Double
+								.departure_time[0] = 18:17:59 : java.lang.String
+								.stop_name[0] = CIVIDALI : java.lang.String
+							.stops[11]
+								.stop_lon[0] = 11.311776 : java.lang.Double
+								.stop_sequence[0] = 12 : java.lang.Integer
+								.stop_id[0] = 6286 : java.lang.String
+								.stop_lat[0] = 44.50156 : java.lang.Double
+								.departure_time[0] = 18:19:00 : java.lang.String
+								.stop_name[0] = MARZABOTTO : java.lang.String
+							.stops[12]
+								.stop_lon[0] = 11.314097 : java.lang.Double
+								.stop_sequence[0] = 13 : java.lang.Integer
+								.stop_id[0] = 6012 : java.lang.String
+								.stop_lat[0] = 44.503819 : java.lang.Double
+								.departure_time[0] = 18:20:00 : java.lang.String
+								.stop_name[0] = OSPEDALE MAGGIORE : java.lang.String
+							.stops[13]
+								.stop_lon[0] = 11.317843 : java.lang.Double
+								.stop_sequence[0] = 14 : java.lang.Integer
+								.stop_id[0] = 6006 : java.lang.String
+								.stop_lat[0] = 44.502472 : java.lang.Double
+								.departure_time[0] = 18:21:23 : java.lang.String
+								.stop_name[0] = TIMAVO : java.lang.String
+							.stops[14]
+								.stop_lon[0] = 11.322191 : java.lang.Double
+								.stop_sequence[0] = 15 : java.lang.Integer
+								.stop_id[0] = 6004 : java.lang.String
+								.stop_lat[0] = 44.500946 : java.lang.Double
+								.departure_time[0] = 18:23:00 : java.lang.String
+								.stop_name[0] = SAFFI : java.lang.String
+							.stops[15]
+								.stop_lon[0] = 11.324828 : java.lang.Double
+								.stop_sequence[0] = 16 : java.lang.Integer
+								.stop_id[0] = 6002 : java.lang.String
+								.stop_lat[0] = 44.500027 : java.lang.Double
+								.departure_time[0] = 18:24:07 : java.lang.String
+								.stop_name[0] = SAN PIO V : java.lang.String
+							.stops[16]
+								.stop_lon[0] = 11.328271 : java.lang.Double
+								.stop_sequence[0] = 17 : java.lang.Integer
+								.stop_id[0] = 620 : java.lang.String
+								.stop_lat[0] = 44.498821 : java.lang.Double
+								.departure_time[0] = 18:25:40 : java.lang.String
+								.stop_name[0] = PORTA SAN FELICE : java.lang.String
+							.stops[17]
+								.stop_lon[0] = 11.332062 : java.lang.Double
+								.stop_sequence[0] = 18 : java.lang.Integer
+								.stop_id[0] = 616 : java.lang.String
+								.stop_lat[0] = 44.497486 : java.lang.Double
+								.departure_time[0] = 18:27:17 : java.lang.String
+								.stop_name[0] = SAN FELICE : java.lang.String
+							.stops[18]
+								.stop_lon[0] = 11.338472 : java.lang.Double
+								.stop_sequence[0] = 19 : java.lang.Integer
+								.stop_id[0] = 604 : java.lang.String
+								.stop_lat[0] = 44.495472 : java.lang.Double
+								.departure_time[0] = 18:30:00 : java.lang.String
+								.stop_name[0] = UGO BASSI : java.lang.String
+							.stops[19]
+								.stop_lon[0] = 11.344916 : java.lang.Double
+								.stop_sequence[0] = 20 : java.lang.Integer
+								.stop_id[0] = 105 : java.lang.String
+								.stop_lat[0] = 44.494453 : java.lang.Double
+								.departure_time[0] = 18:32:00 : java.lang.String
+								.stop_name[0] = RIZZOLI : java.lang.String
+							.stops[20]
+								.stop_lon[0] = 11.35026 : java.lang.Double
+								.stop_sequence[0] = 21 : java.lang.Integer
+								.stop_id[0] = 111 : java.lang.String
+								.stop_lat[0] = 44.492702 : java.lang.Double
+								.departure_time[0] = 18:34:21 : java.lang.String
+								.stop_name[0] = STRADA MAGGIORE : java.lang.String
+							.stops[21]
+								.stop_lon[0] = 11.355041 : java.lang.Double
+								.stop_sequence[0] = 22 : java.lang.Integer
+								.stop_id[0] = 117 : java.lang.String
+								.stop_lat[0] = 44.490891 : java.lang.Double
+								.departure_time[0] = 18:36:30 : java.lang.String
+								.stop_name[0] = TORLEONE : java.lang.String
+							.stops[22]
+								.stop_lon[0] = 11.358295 : java.lang.Double
+								.stop_sequence[0] = 23 : java.lang.Integer
+								.stop_id[0] = 1003 : java.lang.String
+								.stop_lat[0] = 44.48967 : java.lang.Double
+								.departure_time[0] = 18:38:00 : java.lang.String
+								.stop_name[0] = PORTA MAZZINI : java.lang.String
+							.stops[23]
+								.stop_lon[0] = 11.362913 : java.lang.Double
+								.stop_sequence[0] = 24 : java.lang.Integer
+								.stop_id[0] = 1005 : java.lang.String
+								.stop_lat[0] = 44.487911 : java.lang.Double
+								.departure_time[0] = 18:39:59 : java.lang.String
+								.stop_name[0] = ALBERTONI : java.lang.String
+							.stops[24]
+								.stop_lon[0] = 11.365079 : java.lang.Double
+								.stop_sequence[0] = 25 : java.lang.Integer
+								.stop_id[0] = 1009 : java.lang.String
+								.stop_lat[0] = 44.487114 : java.lang.Double
+								.departure_time[0] = 18:40:55 : java.lang.String
+								.stop_name[0] = ALEMANNI : java.lang.String
+							.stops[25]
+								.stop_lon[0] = 11.369396 : java.lang.Double
+								.stop_sequence[0] = 26 : java.lang.Integer
+								.stop_id[0] = 1011 : java.lang.String
+								.stop_lat[0] = 44.485512 : java.lang.Double
+								.departure_time[0] = 18:42:46 : java.lang.String
+								.stop_name[0] = LAURA BASSI : java.lang.String
+							.stops[26]
+								.stop_lon[0] = 11.372252 : java.lang.Double
+								.stop_sequence[0] = 27 : java.lang.Integer
+								.stop_id[0] = 1013 : java.lang.String
+								.stop_lat[0] = 44.484398 : java.lang.Double
+								.departure_time[0] = 18:44:00 : java.lang.String
+								.stop_name[0] = FERMI : java.lang.String
+							.stops[27]
+								.stop_lon[0] = 11.376545 : java.lang.Double
+								.stop_sequence[0] = 28 : java.lang.Integer
+								.stop_id[0] = 1019 : java.lang.String
+								.stop_lat[0] = 44.48275 : java.lang.Double
+								.departure_time[0] = 18:45:35 : java.lang.String
+								.stop_name[0] = MAZZINI STAZIONE : java.lang.String
+							.stops[28]
+								.stop_lon[0] = 11.380459 : java.lang.Double
+								.stop_sequence[0] = 29 : java.lang.Integer
+								.stop_id[0] = 1021 : java.lang.String
+								.stop_lat[0] = 44.481434 : java.lang.Double
+								.departure_time[0] = 18:47:00 : java.lang.String
+								.stop_name[0] = PONTEVECCHIO : java.lang.String
+							.stops[29]
+								.stop_lon[0] = 11.385255 : java.lang.Double
+								.stop_sequence[0] = 30 : java.lang.Integer
+								.stop_id[0] = 1025 : java.lang.String
+								.stop_lat[0] = 44.479332 : java.lang.Double
+								.departure_time[0] = 18:48:22 : java.lang.String
+								.stop_name[0] = VILLA LAURA : java.lang.String
+							.stops[30]
+								.stop_lon[0] = 11.387954 : java.lang.Double
+								.stop_sequence[0] = 31 : java.lang.Integer
+								.stop_id[0] = 1031 : java.lang.String
+								.stop_lat[0] = 44.478367 : java.lang.Double
+								.departure_time[0] = 18:49:07 : java.lang.String
+								.stop_name[0] = EMILIA CALABRIA : java.lang.String
+							.stops[31]
+								.stop_lon[0] = 11.391191 : java.lang.Double
+								.stop_sequence[0] = 32 : java.lang.Integer
+								.stop_id[0] = 1027 : java.lang.String
+								.stop_lat[0] = 44.477165 : java.lang.Double
+								.departure_time[0] = 18:50:00 : java.lang.String
+								.stop_name[0] = ARNO : java.lang.String
+							.stops[32]
+								.stop_lon[0] = 11.395176 : java.lang.Double
+								.stop_sequence[0] = 33 : java.lang.Integer
+								.stop_id[0] = 1033 : java.lang.String
+								.stop_lat[0] = 44.475597 : java.lang.Double
+								.departure_time[0] = 18:51:40 : java.lang.String
+								.stop_name[0] = VILLAGGIO DUE MADONNE : java.lang.String
+							.stops[33]
+								.stop_lon[0] = 11.398598 : java.lang.Double
+								.stop_sequence[0] = 34 : java.lang.Integer
+								.stop_id[0] = 1035 : java.lang.String
+								.stop_lat[0] = 44.474293 : java.lang.Double
+								.departure_time[0] = 18:53:05 : java.lang.String
+								.stop_name[0] = PARCO DEI CEDRI : java.lang.String
+							.stops[34]
+								.stop_lon[0] = 11.40307 : java.lang.Double
+								.stop_sequence[0] = 35 : java.lang.Integer
+								.stop_id[0] = 1037 : java.lang.String
+								.stop_lat[0] = 44.472641 : java.lang.Double
+								.departure_time[0] = 18:54:55 : java.lang.String
+								.stop_name[0] = SAN LAZZARO FIUME SAVENA : java.lang.String
+							.stops[35]
+								.stop_lon[0] = 11.406074 : java.lang.Double
+								.stop_sequence[0] = 36 : java.lang.Integer
+								.stop_id[0] = 1041 : java.lang.String
+								.stop_lat[0] = 44.471516 : java.lang.Double
+								.departure_time[0] = 18:56:10 : java.lang.String
+								.stop_name[0] = SAN LAZZARO VILLA RODRIGUEZ : java.lang.String
+							.stops[36]
+								.stop_lon[0] = 11.408088 : java.lang.Double
+								.stop_sequence[0] = 37 : java.lang.Integer
+								.stop_id[0] = 1043 : java.lang.String
+								.stop_lat[0] = 44.470722 : java.lang.Double
+								.departure_time[0] = 18:57:00 : java.lang.String
+								.stop_name[0] = SAN LAZZARO MUNICIPIO : java.lang.String
+							.stops[37]
+								.stop_lon[0] = 11.412983 : java.lang.Double
+								.stop_sequence[0] = 38 : java.lang.Integer
+								.stop_id[0] = 1045 : java.lang.String
+								.stop_lat[0] = 44.468822 : java.lang.Double
+								.departure_time[0] = 18:58:15 : java.lang.String
+								.stop_name[0] = SAN LAZZARO JUSSI : java.lang.String
+							.stops[38]
+								.stop_lon[0] = 11.412531 : java.lang.Double
+								.stop_sequence[0] = 39 : java.lang.Integer
+								.stop_id[0] = 1053 : java.lang.String
+								.stop_lat[0] = 44.466972 : java.lang.Double
+								.departure_time[0] = 18:59:04 : java.lang.String
+								.stop_name[0] = SAN LAZZARO DI VITTORIO : java.lang.String
+							.stops[39]
+								.stop_lon[0] = 11.411228 : java.lang.Double
+								.stop_sequence[0] = 40 : java.lang.Integer
+								.stop_id[0] = 9235 : java.lang.String
+								.stop_lat[0] = 44.464394 : java.lang.Double
+								.departure_time[0] = 19:00:04 : java.lang.String
+								.stop_name[0] = SAN LAZZARO GIOVANNI XXIII : java.lang.String
+							.stops[40]
+								.stop_lon[0] = 11.411822 : java.lang.Double
+								.stop_sequence[0] = 41 : java.lang.Integer
+								.stop_id[0] = 1055 : java.lang.String
+								.stop_lat[0] = 44.460697 : java.lang.Double
+								.departure_time[0] = 19:01:48 : java.lang.String
+								.stop_name[0] = SAN LAZZARO WOOLF : java.lang.String
+							.stops[41]
+								.stop_lon[0] = 11.409679 : java.lang.Double
+								.stop_sequence[0] = 42 : java.lang.Integer
+								.stop_id[0] = 1057 : java.lang.String
+								.stop_lat[0] = 44.462189 : java.lang.Double
+								.departure_time[0] = 19:03:12 : java.lang.String
+								.stop_name[0] = SAN LAZZARO PISCINA KENNEDY : java.lang.String
+							.stops[42]
+								.stop_lon[0] = 11.41046 : java.lang.Double
+								.stop_sequence[0] = 43 : java.lang.Integer
+								.stop_id[0] = 1059 : java.lang.String
+								.stop_lat[0] = 44.464321 : java.lang.Double
+								.departure_time[0] = 19:04:00 : java.lang.String
+								.stop_name[0] = SAN LAZZARO KENNEDY : java.lang.String
+
+[bus_check.ol] 	12.	< N	startMonitor@MySelf			SENDING	MSG_ID:3
+						Value:
+							.trip[0]
+								.direction_id[0] = 0 : java.lang.Integer
+								.route_id[0] = 19 : java.lang.String
+								.service_id[0] = 598_94631 : java.lang.String
+								.id[0] = 598_2605635 : java.lang.String
+								.stops[0]
+									.stop_lon[0] = 11.277344 : java.lang.Double
+									.stop_sequence[0] = 1 : java.lang.Integer
+									.stop_id[0] = 6238 : java.lang.String
+									.stop_lat[0] = 44.500038 : java.lang.Double
+									.departure_time[0] = 18:06:00 : java.lang.String
+									.stop_name[0] = CASTELDEBOLE : java.lang.String
+								.stops[1]
+									.stop_lon[0] = 11.275167 : java.lang.Double
+									.stop_sequence[0] = 2 : java.lang.Integer
+									.stop_id[0] = 6236 : java.lang.String
+									.stop_lat[0] = 44.498932 : java.lang.Double
+									.departure_time[0] = 18:06:42 : java.lang.String
+									.stop_name[0] = ROTTA : java.lang.String
+								.stops[2]
+									.stop_lon[0] = 11.275441 : java.lang.Double
+									.stop_sequence[0] = 3 : java.lang.Integer
+									.stop_id[0] = 6234 : java.lang.String
+									.stop_lat[0] = 44.500912 : java.lang.Double
+									.departure_time[0] = 18:07:42 : java.lang.String
+									.stop_name[0] = SALVEMINI : java.lang.String
+								.stops[3]
+									.stop_lon[0] = 11.277596 : java.lang.Double
+									.stop_sequence[0] = 4 : java.lang.Integer
+									.stop_id[0] = 6230 : java.lang.String
+									.stop_lat[0] = 44.503174 : java.lang.Double
+									.departure_time[0] = 18:08:45 : java.lang.String
+									.stop_name[0] = GALEAZZA : java.lang.String
+								.stops[4]
+									.stop_lon[0] = 11.278428 : java.lang.Double
+									.stop_sequence[0] = 5 : java.lang.Integer
+									.stop_id[0] = 6228 : java.lang.String
+									.stop_lat[0] = 44.505196 : java.lang.Double
+									.departure_time[0] = 18:09:31 : java.lang.String
+									.stop_name[0] = DE NICOLA : java.lang.String
+								.stops[5]
+									.stop_lon[0] = 11.279891 : java.lang.Double
+									.stop_sequence[0] = 6 : java.lang.Integer
+									.stop_id[0] = 6226 : java.lang.String
+									.stop_lat[0] = 44.505241 : java.lang.Double
+									.departure_time[0] = 18:09:59 : java.lang.String
+									.stop_name[0] = LA MALFA : java.lang.String
+								.stops[6]
+									.stop_lon[0] = 11.281591 : java.lang.Double
+									.stop_sequence[0] = 7 : java.lang.Integer
+									.stop_id[0] = 6224 : java.lang.String
+									.stop_lat[0] = 44.505047 : java.lang.Double
+									.departure_time[0] = 18:10:24 : java.lang.String
+									.stop_name[0] = EINAUDI : java.lang.String
+								.stops[7]
+									.stop_lon[0] = 11.284555 : java.lang.Double
+									.stop_sequence[0] = 8 : java.lang.Integer
+									.stop_id[0] = 6222 : java.lang.String
+									.stop_lat[0] = 44.506626 : java.lang.Double
+									.departure_time[0] = 18:11:27 : java.lang.String
+									.stop_name[0] = TOGLIATTI PIETRA : java.lang.String
+								.stops[8]
+									.stop_lon[0] = 11.294084 : java.lang.Double
+									.stop_sequence[0] = 9 : java.lang.Integer
+									.stop_id[0] = 6220 : java.lang.String
+									.stop_lat[0] = 44.503784 : java.lang.Double
+									.departure_time[0] = 18:13:46 : java.lang.String
+									.stop_name[0] = CENTRO VITTORIA - MAST : java.lang.String
+								.stops[9]
+									.stop_lon[0] = 11.299116 : java.lang.Double
+									.stop_sequence[0] = 10 : java.lang.Integer
+									.stop_id[0] = 6218 : java.lang.String
+									.stop_lat[0] = 44.502323 : java.lang.Double
+									.departure_time[0] = 18:15:00 : java.lang.String
+									.stop_name[0] = TOGLIATTI : java.lang.String
+								.stops[10]
+									.stop_lon[0] = 11.308243 : java.lang.Double
+									.stop_sequence[0] = 11 : java.lang.Integer
+									.stop_id[0] = 6212 : java.lang.String
+									.stop_lat[0] = 44.501381 : java.lang.Double
+									.departure_time[0] = 18:17:59 : java.lang.String
+									.stop_name[0] = CIVIDALI : java.lang.String
+								.stops[11]
+									.stop_lon[0] = 11.311776 : java.lang.Double
+									.stop_sequence[0] = 12 : java.lang.Integer
+									.stop_id[0] = 6286 : java.lang.String
+									.stop_lat[0] = 44.50156 : java.lang.Double
+									.departure_time[0] = 18:19:00 : java.lang.String
+									.stop_name[0] = MARZABOTTO : java.lang.String
+								.stops[12]
+									.stop_lon[0] = 11.314097 : java.lang.Double
+									.stop_sequence[0] = 13 : java.lang.Integer
+									.stop_id[0] = 6012 : java.lang.String
+									.stop_lat[0] = 44.503819 : java.lang.Double
+									.departure_time[0] = 18:20:00 : java.lang.String
+									.stop_name[0] = OSPEDALE MAGGIORE : java.lang.String
+								.stops[13]
+									.stop_lon[0] = 11.317843 : java.lang.Double
+									.stop_sequence[0] = 14 : java.lang.Integer
+									.stop_id[0] = 6006 : java.lang.String
+									.stop_lat[0] = 44.502472 : java.lang.Double
+									.departure_time[0] = 18:21:23 : java.lang.String
+									.stop_name[0] = TIMAVO : java.lang.String
+								.stops[14]
+									.stop_lon[0] = 11.322191 : java.lang.Double
+									.stop_sequence[0] = 15 : java.lang.Integer
+									.stop_id[0] = 6004 : java.lang.String
+									.stop_lat[0] = 44.500946 : java.lang.Double
+									.departure_time[0] = 18:23:00 : java.lang.String
+									.stop_name[0] = SAFFI : java.lang.String
+								.stops[15]
+									.stop_lon[0] = 11.324828 : java.lang.Double
+									.stop_sequence[0] = 16 : java.lang.Integer
+									.stop_id[0] = 6002 : java.lang.String
+									.stop_lat[0] = 44.500027 : java.lang.Double
+									.departure_time[0] = 18:24:07 : java.lang.String
+									.stop_name[0] = SAN PIO V : java.lang.String
+								.stops[16]
+									.stop_lon[0] = 11.328271 : java.lang.Double
+									.stop_sequence[0] = 17 : java.lang.Integer
+									.stop_id[0] = 620 : java.lang.String
+									.stop_lat[0] = 44.498821 : java.lang.Double
+									.departure_time[0] = 18:25:40 : java.lang.String
+									.stop_name[0] = PORTA SAN FELICE : java.lang.String
+								.stops[17]
+									.stop_lon[0] = 11.332062 : java.lang.Double
+									.stop_sequence[0] = 18 : java.lang.Integer
+									.stop_id[0] = 616 : java.lang.String
+									.stop_lat[0] = 44.497486 : java.lang.Double
+									.departure_time[0] = 18:27:17 : java.lang.String
+									.stop_name[0] = SAN FELICE : java.lang.String
+								.stops[18]
+									.stop_lon[0] = 11.338472 : java.lang.Double
+									.stop_sequence[0] = 19 : java.lang.Integer
+									.stop_id[0] = 604 : java.lang.String
+									.stop_lat[0] = 44.495472 : java.lang.Double
+									.departure_time[0] = 18:30:00 : java.lang.String
+									.stop_name[0] = UGO BASSI : java.lang.String
+								.stops[19]
+									.stop_lon[0] = 11.344916 : java.lang.Double
+									.stop_sequence[0] = 20 : java.lang.Integer
+									.stop_id[0] = 105 : java.lang.String
+									.stop_lat[0] = 44.494453 : java.lang.Double
+									.departure_time[0] = 18:32:00 : java.lang.String
+									.stop_name[0] = RIZZOLI : java.lang.String
+								.stops[20]
+									.stop_lon[0] = 11.35026 : java.lang.Double
+									.stop_sequence[0] = 21 : java.lang.Integer
+									.stop_id[0] = 111 : java.lang.String
+									.stop_lat[0] = 44.492702 : java.lang.Double
+									.departure_time[0] = 18:34:21 : java.lang.String
+									.stop_name[0] = STRADA MAGGIORE : java.lang.String
+								.stops[21]
+									.stop_lon[0] = 11.355041 : java.lang.Double
+									.stop_sequence[0] = 22 : java.lang.Integer
+									.stop_id[0] = 117 : java.lang.String
+									.stop_lat[0] = 44.490891 : java.lang.Double
+									.departure_time[0] = 18:36:30 : java.lang.String
+									.stop_name[0] = TORLEONE : java.lang.String
+								.stops[22]
+									.stop_lon[0] = 11.358295 : java.lang.Double
+									.stop_sequence[0] = 23 : java.lang.Integer
+									.stop_id[0] = 1003 : java.lang.String
+									.stop_lat[0] = 44.48967 : java.lang.Double
+									.departure_time[0] = 18:38:00 : java.lang.String
+									.stop_name[0] = PORTA MAZZINI : java.lang.String
+								.stops[23]
+									.stop_lon[0] = 11.362913 : java.lang.Double
+									.stop_sequence[0] = 24 : java.lang.Integer
+									.stop_id[0] = 1005 : java.lang.String
+									.stop_lat[0] = 44.487911 : java.lang.Double
+									.departure_time[0] = 18:39:59 : java.lang.String
+									.stop_name[0] = ALBERTONI : java.lang.String
+								.stops[24]
+									.stop_lon[0] = 11.365079 : java.lang.Double
+									.stop_sequence[0] = 25 : java.lang.Integer
+									.stop_id[0] = 1009 : java.lang.String
+									.stop_lat[0] = 44.487114 : java.lang.Double
+									.departure_time[0] = 18:40:55 : java.lang.String
+									.stop_name[0] = ALEMANNI : java.lang.String
+								.stops[25]
+									.stop_lon[0] = 11.369396 : java.lang.Double
+									.stop_sequence[0] = 26 : java.lang.Integer
+									.stop_id[0] = 1011 : java.lang.String
+									.stop_lat[0] = 44.485512 : java.lang.Double
+									.departure_time[0] = 18:42:46 : java.lang.String
+									.stop_name[0] = LAURA BASSI : java.lang.String
+								.stops[26]
+									.stop_lon[0] = 11.372252 : java.lang.Double
+									.stop_sequence[0] = 27 : java.lang.Integer
+									.stop_id[0] = 1013 : java.lang.String
+									.stop_lat[0] = 44.484398 : java.lang.Double
+									.departure_time[0] = 18:44:00 : java.lang.String
+									.stop_name[0] = FERMI : java.lang.String
+								.stops[27]
+									.stop_lon[0] = 11.376545 : java.lang.Double
+									.stop_sequence[0] = 28 : java.lang.Integer
+									.stop_id[0] = 1019 : java.lang.String
+									.stop_lat[0] = 44.48275 : java.lang.Double
+									.departure_time[0] = 18:45:35 : java.lang.String
+									.stop_name[0] = MAZZINI STAZIONE : java.lang.String
+								.stops[28]
+									.stop_lon[0] = 11.380459 : java.lang.Double
+									.stop_sequence[0] = 29 : java.lang.Integer
+									.stop_id[0] = 1021 : java.lang.String
+									.stop_lat[0] = 44.481434 : java.lang.Double
+									.departure_time[0] = 18:47:00 : java.lang.String
+									.stop_name[0] = PONTEVECCHIO : java.lang.String
+								.stops[29]
+									.stop_lon[0] = 11.385255 : java.lang.Double
+									.stop_sequence[0] = 30 : java.lang.Integer
+									.stop_id[0] = 1025 : java.lang.String
+									.stop_lat[0] = 44.479332 : java.lang.Double
+									.departure_time[0] = 18:48:22 : java.lang.String
+									.stop_name[0] = VILLA LAURA : java.lang.String
+								.stops[30]
+									.stop_lon[0] = 11.387954 : java.lang.Double
+									.stop_sequence[0] = 31 : java.lang.Integer
+									.stop_id[0] = 1031 : java.lang.String
+									.stop_lat[0] = 44.478367 : java.lang.Double
+									.departure_time[0] = 18:49:07 : java.lang.String
+									.stop_name[0] = EMILIA CALABRIA : java.lang.String
+								.stops[31]
+									.stop_lon[0] = 11.391191 : java.lang.Double
+									.stop_sequence[0] = 32 : java.lang.Integer
+									.stop_id[0] = 1027 : java.lang.String
+									.stop_lat[0] = 44.477165 : java.lang.Double
+									.departure_time[0] = 18:50:00 : java.lang.String
+									.stop_name[0] = ARNO : java.lang.String
+								.stops[32]
+									.stop_lon[0] = 11.395176 : java.lang.Double
+									.stop_sequence[0] = 33 : java.lang.Integer
+									.stop_id[0] = 1033 : java.lang.String
+									.stop_lat[0] = 44.475597 : java.lang.Double
+									.departure_time[0] = 18:51:40 : java.lang.String
+									.stop_name[0] = VILLAGGIO DUE MADONNE : java.lang.String
+								.stops[33]
+									.stop_lon[0] = 11.398598 : java.lang.Double
+									.stop_sequence[0] = 34 : java.lang.Integer
+									.stop_id[0] = 1035 : java.lang.String
+									.stop_lat[0] = 44.474293 : java.lang.Double
+									.departure_time[0] = 18:53:05 : java.lang.String
+									.stop_name[0] = PARCO DEI CEDRI : java.lang.String
+								.stops[34]
+									.stop_lon[0] = 11.40307 : java.lang.Double
+									.stop_sequence[0] = 35 : java.lang.Integer
+									.stop_id[0] = 1037 : java.lang.String
+									.stop_lat[0] = 44.472641 : java.lang.Double
+									.departure_time[0] = 18:54:55 : java.lang.String
+									.stop_name[0] = SAN LAZZARO FIUME SAVENA : java.lang.String
+								.stops[35]
+									.stop_lon[0] = 11.406074 : java.lang.Double
+									.stop_sequence[0] = 36 : java.lang.Integer
+									.stop_id[0] = 1041 : java.lang.String
+									.stop_lat[0] = 44.471516 : java.lang.Double
+									.departure_time[0] = 18:56:10 : java.lang.String
+									.stop_name[0] = SAN LAZZARO VILLA RODRIGUEZ : java.lang.String
+								.stops[36]
+									.stop_lon[0] = 11.408088 : java.lang.Double
+									.stop_sequence[0] = 37 : java.lang.Integer
+									.stop_id[0] = 1043 : java.lang.String
+									.stop_lat[0] = 44.470722 : java.lang.Double
+									.departure_time[0] = 18:57:00 : java.lang.String
+									.stop_name[0] = SAN LAZZARO MUNICIPIO : java.lang.String
+								.stops[37]
+									.stop_lon[0] = 11.412983 : java.lang.Double
+									.stop_sequence[0] = 38 : java.lang.Integer
+									.stop_id[0] = 1045 : java.lang.String
+									.stop_lat[0] = 44.468822 : java.lang.Double
+									.departure_time[0] = 18:58:15 : java.lang.String
+									.stop_name[0] = SAN LAZZARO JUSSI : java.lang.String
+								.stops[38]
+									.stop_lon[0] = 11.412531 : java.lang.Double
+									.stop_sequence[0] = 39 : java.lang.Integer
+									.stop_id[0] = 1053 : java.lang.String
+									.stop_lat[0] = 44.466972 : java.lang.Double
+									.departure_time[0] = 18:59:04 : java.lang.String
+									.stop_name[0] = SAN LAZZARO DI VITTORIO : java.lang.String
+								.stops[39]
+									.stop_lon[0] = 11.411228 : java.lang.Double
+									.stop_sequence[0] = 40 : java.lang.Integer
+									.stop_id[0] = 9235 : java.lang.String
+									.stop_lat[0] = 44.464394 : java.lang.Double
+									.departure_time[0] = 19:00:04 : java.lang.String
+									.stop_name[0] = SAN LAZZARO GIOVANNI XXIII : java.lang.String
+								.stops[40]
+									.stop_lon[0] = 11.411822 : java.lang.Double
+									.stop_sequence[0] = 41 : java.lang.Integer
+									.stop_id[0] = 1055 : java.lang.String
+									.stop_lat[0] = 44.460697 : java.lang.Double
+									.departure_time[0] = 19:01:48 : java.lang.String
+									.stop_name[0] = SAN LAZZARO WOOLF : java.lang.String
+								.stops[41]
+									.stop_lon[0] = 11.409679 : java.lang.Double
+									.stop_sequence[0] = 42 : java.lang.Integer
+									.stop_id[0] = 1057 : java.lang.String
+									.stop_lat[0] = 44.462189 : java.lang.Double
+									.departure_time[0] = 19:03:12 : java.lang.String
+									.stop_name[0] = SAN LAZZARO PISCINA KENNEDY : java.lang.String
+								.stops[42]
+									.stop_lon[0] = 11.41046 : java.lang.Double
+									.stop_sequence[0] = 43 : java.lang.Integer
+									.stop_id[0] = 1059 : java.lang.String
+									.stop_lat[0] = 44.464321 : java.lang.Double
+									.departure_time[0] = 19:04:00 : java.lang.String
+									.stop_name[0] = SAN LAZZARO KENNEDY : java.lang.String
+
+[bus_check.ol] 	13.	< N	startMonitor@MySelf			SENT	MSG_ID:3
+						Value:
+							.trip[0]
+								.direction_id[0] = 0 : java.lang.Integer
+								.route_id[0] = 19 : java.lang.String
+								.service_id[0] = 598_94631 : java.lang.String
+								.id[0] = 598_2605635 : java.lang.String
+								.stops[0]
+									.stop_lon[0] = 11.277344 : java.lang.Double
+									.stop_sequence[0] = 1 : java.lang.Integer
+									.stop_id[0] = 6238 : java.lang.String
+									.stop_lat[0] = 44.500038 : java.lang.Double
+									.departure_time[0] = 18:06:00 : java.lang.String
+									.stop_name[0] = CASTELDEBOLE : java.lang.String
+								.stops[1]
+									.stop_lon[0] = 11.275167 : java.lang.Double
+									.stop_sequence[0] = 2 : java.lang.Integer
+									.stop_id[0] = 6236 : java.lang.String
+									.stop_lat[0] = 44.498932 : java.lang.Double
+									.departure_time[0] = 18:06:42 : java.lang.String
+									.stop_name[0] = ROTTA : java.lang.String
+								.stops[2]
+									.stop_lon[0] = 11.275441 : java.lang.Double
+									.stop_sequence[0] = 3 : java.lang.Integer
+									.stop_id[0] = 6234 : java.lang.String
+									.stop_lat[0] = 44.500912 : java.lang.Double
+									.departure_time[0] = 18:07:42 : java.lang.String
+									.stop_name[0] = SALVEMINI : java.lang.String
+								.stops[3]
+									.stop_lon[0] = 11.277596 : java.lang.Double
+									.stop_sequence[0] = 4 : java.lang.Integer
+									.stop_id[0] = 6230 : java.lang.String
+									.stop_lat[0] = 44.503174 : java.lang.Double
+									.departure_time[0] = 18:08:45 : java.lang.String
+									.stop_name[0] = GALEAZZA : java.lang.String
+								.stops[4]
+									.stop_lon[0] = 11.278428 : java.lang.Double
+									.stop_sequence[0] = 5 : java.lang.Integer
+									.stop_id[0] = 6228 : java.lang.String
+									.stop_lat[0] = 44.505196 : java.lang.Double
+									.departure_time[0] = 18:09:31 : java.lang.String
+									.stop_name[0] = DE NICOLA : java.lang.String
+								.stops[5]
+									.stop_lon[0] = 11.279891 : java.lang.Double
+									.stop_sequence[0] = 6 : java.lang.Integer
+									.stop_id[0] = 6226 : java.lang.String
+									.stop_lat[0] = 44.505241 : java.lang.Double
+									.departure_time[0] = 18:09:59 : java.lang.String
+									.stop_name[0] = LA MALFA : java.lang.String
+								.stops[6]
+									.stop_lon[0] = 11.281591 : java.lang.Double
+									.stop_sequence[0] = 7 : java.lang.Integer
+									.stop_id[0] = 6224 : java.lang.String
+									.stop_lat[0] = 44.505047 : java.lang.Double
+									.departure_time[0] = 18:10:24 : java.lang.String
+									.stop_name[0] = EINAUDI : java.lang.String
+								.stops[7]
+									.stop_lon[0] = 11.284555 : java.lang.Double
+									.stop_sequence[0] = 8 : java.lang.Integer
+									.stop_id[0] = 6222 : java.lang.String
+									.stop_lat[0] = 44.506626 : java.lang.Double
+									.departure_time[0] = 18:11:27 : java.lang.String
+									.stop_name[0] = TOGLIATTI PIETRA : java.lang.String
+								.stops[8]
+									.stop_lon[0] = 11.294084 : java.lang.Double
+									.stop_sequence[0] = 9 : java.lang.Integer
+									.stop_id[0] = 6220 : java.lang.String
+									.stop_lat[0] = 44.503784 : java.lang.Double
+									.departure_time[0] = 18:13:46 : java.lang.String
+									.stop_name[0] = CENTRO VITTORIA - MAST : java.lang.String
+								.stops[9]
+									.stop_lon[0] = 11.299116 : java.lang.Double
+									.stop_sequence[0] = 10 : java.lang.Integer
+									.stop_id[0] = 6218 : java.lang.String
+									.stop_lat[0] = 44.502323 : java.lang.Double
+									.departure_time[0] = 18:15:00 : java.lang.String
+									.stop_name[0] = TOGLIATTI : java.lang.String
+								.stops[10]
+									.stop_lon[0] = 11.308243 : java.lang.Double
+									.stop_sequence[0] = 11 : java.lang.Integer
+									.stop_id[0] = 6212 : java.lang.String
+									.stop_lat[0] = 44.501381 : java.lang.Double
+									.departure_time[0] = 18:17:59 : java.lang.String
+									.stop_name[0] = CIVIDALI : java.lang.String
+								.stops[11]
+									.stop_lon[0] = 11.311776 : java.lang.Double
+									.stop_sequence[0] = 12 : java.lang.Integer
+									.stop_id[0] = 6286 : java.lang.String
+									.stop_lat[0] = 44.50156 : java.lang.Double
+									.departure_time[0] = 18:19:00 : java.lang.String
+									.stop_name[0] = MARZABOTTO : java.lang.String
+								.stops[12]
+									.stop_lon[0] = 11.314097 : java.lang.Double
+									.stop_sequence[0] = 13 : java.lang.Integer
+									.stop_id[0] = 6012 : java.lang.String
+									.stop_lat[0] = 44.503819 : java.lang.Double
+									.departure_time[0] = 18:20:00 : java.lang.String
+									.stop_name[0] = OSPEDALE MAGGIORE : java.lang.String
+								.stops[13]
+									.stop_lon[0] = 11.317843 : java.lang.Double
+									.stop_sequence[0] = 14 : java.lang.Integer
+									.stop_id[0] = 6006 : java.lang.String
+									.stop_lat[0] = 44.502472 : java.lang.Double
+									.departure_time[0] = 18:21:23 : java.lang.String
+									.stop_name[0] = TIMAVO : java.lang.String
+								.stops[14]
+									.stop_lon[0] = 11.322191 : java.lang.Double
+									.stop_sequence[0] = 15 : java.lang.Integer
+									.stop_id[0] = 6004 : java.lang.String
+									.stop_lat[0] = 44.500946 : java.lang.Double
+									.departure_time[0] = 18:23:00 : java.lang.String
+									.stop_name[0] = SAFFI : java.lang.String
+								.stops[15]
+									.stop_lon[0] = 11.324828 : java.lang.Double
+									.stop_sequence[0] = 16 : java.lang.Integer
+									.stop_id[0] = 6002 : java.lang.String
+									.stop_lat[0] = 44.500027 : java.lang.Double
+									.departure_time[0] = 18:24:07 : java.lang.String
+									.stop_name[0] = SAN PIO V : java.lang.String
+								.stops[16]
+									.stop_lon[0] = 11.328271 : java.lang.Double
+									.stop_sequence[0] = 17 : java.lang.Integer
+									.stop_id[0] = 620 : java.lang.String
+									.stop_lat[0] = 44.498821 : java.lang.Double
+									.departure_time[0] = 18:25:40 : java.lang.String
+									.stop_name[0] = PORTA SAN FELICE : java.lang.String
+								.stops[17]
+									.stop_lon[0] = 11.332062 : java.lang.Double
+									.stop_sequence[0] = 18 : java.lang.Integer
+									.stop_id[0] = 616 : java.lang.String
+									.stop_lat[0] = 44.497486 : java.lang.Double
+									.departure_time[0] = 18:27:17 : java.lang.String
+									.stop_name[0] = SAN FELICE : java.lang.String
+								.stops[18]
+									.stop_lon[0] = 11.338472 : java.lang.Double
+									.stop_sequence[0] = 19 : java.lang.Integer
+									.stop_id[0] = 604 : java.lang.String
+									.stop_lat[0] = 44.495472 : java.lang.Double
+									.departure_time[0] = 18:30:00 : java.lang.String
+									.stop_name[0] = UGO BASSI : java.lang.String
+								.stops[19]
+									.stop_lon[0] = 11.344916 : java.lang.Double
+									.stop_sequence[0] = 20 : java.lang.Integer
+									.stop_id[0] = 105 : java.lang.String
+									.stop_lat[0] = 44.494453 : java.lang.Double
+									.departure_time[0] = 18:32:00 : java.lang.String
+									.stop_name[0] = RIZZOLI : java.lang.String
+								.stops[20]
+									.stop_lon[0] = 11.35026 : java.lang.Double
+									.stop_sequence[0] = 21 : java.lang.Integer
+									.stop_id[0] = 111 : java.lang.String
+									.stop_lat[0] = 44.492702 : java.lang.Double
+									.departure_time[0] = 18:34:21 : java.lang.String
+									.stop_name[0] = STRADA MAGGIORE : java.lang.String
+								.stops[21]
+									.stop_lon[0] = 11.355041 : java.lang.Double
+									.stop_sequence[0] = 22 : java.lang.Integer
+									.stop_id[0] = 117 : java.lang.String
+									.stop_lat[0] = 44.490891 : java.lang.Double
+									.departure_time[0] = 18:36:30 : java.lang.String
+									.stop_name[0] = TORLEONE : java.lang.String
+								.stops[22]
+									.stop_lon[0] = 11.358295 : java.lang.Double
+									.stop_sequence[0] = 23 : java.lang.Integer
+									.stop_id[0] = 1003 : java.lang.String
+									.stop_lat[0] = 44.48967 : java.lang.Double
+									.departure_time[0] = 18:38:00 : java.lang.String
+									.stop_name[0] = PORTA MAZZINI : java.lang.String
+								.stops[23]
+									.stop_lon[0] = 11.362913 : java.lang.Double
+									.stop_sequence[0] = 24 : java.lang.Integer
+									.stop_id[0] = 1005 : java.lang.String
+									.stop_lat[0] = 44.487911 : java.lang.Double
+									.departure_time[0] = 18:39:59 : java.lang.String
+									.stop_name[0] = ALBERTONI : java.lang.String
+								.stops[24]
+									.stop_lon[0] = 11.365079 : java.lang.Double
+									.stop_sequence[0] = 25 : java.lang.Integer
+									.stop_id[0] = 1009 : java.lang.String
+									.stop_lat[0] = 44.487114 : java.lang.Double
+									.departure_time[0] = 18:40:55 : java.lang.String
+									.stop_name[0] = ALEMANNI : java.lang.String
+								.stops[25]
+									.stop_lon[0] = 11.369396 : java.lang.Double
+									.stop_sequence[0] = 26 : java.lang.Integer
+									.stop_id[0] = 1011 : java.lang.String
+									.stop_lat[0] = 44.485512 : java.lang.Double
+									.departure_time[0] = 18:42:46 : java.lang.String
+									.stop_name[0] = LAURA BASSI : java.lang.String
+								.stops[26]
+									.stop_lon[0] = 11.372252 : java.lang.Double
+									.stop_sequence[0] = 27 : java.lang.Integer
+									.stop_id[0] = 1013 : java.lang.String
+									.stop_lat[0] = 44.484398 : java.lang.Double
+									.departure_time[0] = 18:44:00 : java.lang.String
+									.stop_name[0] = FERMI : java.lang.String
+								.stops[27]
+									.stop_lon[0] = 11.376545 : java.lang.Double
+									.stop_sequence[0] = 28 : java.lang.Integer
+									.stop_id[0] = 1019 : java.lang.String
+									.stop_lat[0] = 44.48275 : java.lang.Double
+									.departure_time[0] = 18:45:35 : java.lang.String
+									.stop_name[0] = MAZZINI STAZIONE : java.lang.String
+								.stops[28]
+									.stop_lon[0] = 11.380459 : java.lang.Double
+									.stop_sequence[0] = 29 : java.lang.Integer
+									.stop_id[0] = 1021 : java.lang.String
+									.stop_lat[0] = 44.481434 : java.lang.Double
+									.departure_time[0] = 18:47:00 : java.lang.String
+									.stop_name[0] = PONTEVECCHIO : java.lang.String
+								.stops[29]
+									.stop_lon[0] = 11.385255 : java.lang.Double
+									.stop_sequence[0] = 30 : java.lang.Integer
+									.stop_id[0] = 1025 : java.lang.String
+									.stop_lat[0] = 44.479332 : java.lang.Double
+									.departure_time[0] = 18:48:22 : java.lang.String
+									.stop_name[0] = VILLA LAURA : java.lang.String
+								.stops[30]
+									.stop_lon[0] = 11.387954 : java.lang.Double
+									.stop_sequence[0] = 31 : java.lang.Integer
+									.stop_id[0] = 1031 : java.lang.String
+									.stop_lat[0] = 44.478367 : java.lang.Double
+									.departure_time[0] = 18:49:07 : java.lang.String
+									.stop_name[0] = EMILIA CALABRIA : java.lang.String
+								.stops[31]
+									.stop_lon[0] = 11.391191 : java.lang.Double
+									.stop_sequence[0] = 32 : java.lang.Integer
+									.stop_id[0] = 1027 : java.lang.String
+									.stop_lat[0] = 44.477165 : java.lang.Double
+									.departure_time[0] = 18:50:00 : java.lang.String
+									.stop_name[0] = ARNO : java.lang.String
+								.stops[32]
+									.stop_lon[0] = 11.395176 : java.lang.Double
+									.stop_sequence[0] = 33 : java.lang.Integer
+									.stop_id[0] = 1033 : java.lang.String
+									.stop_lat[0] = 44.475597 : java.lang.Double
+									.departure_time[0] = 18:51:40 : java.lang.String
+									.stop_name[0] = VILLAGGIO DUE MADONNE : java.lang.String
+								.stops[33]
+									.stop_lon[0] = 11.398598 : java.lang.Double
+									.stop_sequence[0] = 34 : java.lang.Integer
+									.stop_id[0] = 1035 : java.lang.String
+									.stop_lat[0] = 44.474293 : java.lang.Double
+									.departure_time[0] = 18:53:05 : java.lang.String
+									.stop_name[0] = PARCO DEI CEDRI : java.lang.String
+								.stops[34]
+									.stop_lon[0] = 11.40307 : java.lang.Double
+									.stop_sequence[0] = 35 : java.lang.Integer
+									.stop_id[0] = 1037 : java.lang.String
+									.stop_lat[0] = 44.472641 : java.lang.Double
+									.departure_time[0] = 18:54:55 : java.lang.String
+									.stop_name[0] = SAN LAZZARO FIUME SAVENA : java.lang.String
+								.stops[35]
+									.stop_lon[0] = 11.406074 : java.lang.Double
+									.stop_sequence[0] = 36 : java.lang.Integer
+									.stop_id[0] = 1041 : java.lang.String
+									.stop_lat[0] = 44.471516 : java.lang.Double
+									.departure_time[0] = 18:56:10 : java.lang.String
+									.stop_name[0] = SAN LAZZARO VILLA RODRIGUEZ : java.lang.String
+								.stops[36]
+									.stop_lon[0] = 11.408088 : java.lang.Double
+									.stop_sequence[0] = 37 : java.lang.Integer
+									.stop_id[0] = 1043 : java.lang.String
+									.stop_lat[0] = 44.470722 : java.lang.Double
+									.departure_time[0] = 18:57:00 : java.lang.String
+									.stop_name[0] = SAN LAZZARO MUNICIPIO : java.lang.String
+								.stops[37]
+									.stop_lon[0] = 11.412983 : java.lang.Double
+									.stop_sequence[0] = 38 : java.lang.Integer
+									.stop_id[0] = 1045 : java.lang.String
+									.stop_lat[0] = 44.468822 : java.lang.Double
+									.departure_time[0] = 18:58:15 : java.lang.String
+									.stop_name[0] = SAN LAZZARO JUSSI : java.lang.String
+								.stops[38]
+									.stop_lon[0] = 11.412531 : java.lang.Double
+									.stop_sequence[0] = 39 : java.lang.Integer
+									.stop_id[0] = 1053 : java.lang.String
+									.stop_lat[0] = 44.466972 : java.lang.Double
+									.departure_time[0] = 18:59:04 : java.lang.String
+									.stop_name[0] = SAN LAZZARO DI VITTORIO : java.lang.String
+								.stops[39]
+									.stop_lon[0] = 11.411228 : java.lang.Double
+									.stop_sequence[0] = 40 : java.lang.Integer
+									.stop_id[0] = 9235 : java.lang.String
+									.stop_lat[0] = 44.464394 : java.lang.Double
+									.departure_time[0] = 19:00:04 : java.lang.String
+									.stop_name[0] = SAN LAZZARO GIOVANNI XXIII : java.lang.String
+								.stops[40]
+									.stop_lon[0] = 11.411822 : java.lang.Double
+									.stop_sequence[0] = 41 : java.lang.Integer
+									.stop_id[0] = 1055 : java.lang.String
+									.stop_lat[0] = 44.460697 : java.lang.Double
+									.departure_time[0] = 19:01:48 : java.lang.String
+									.stop_name[0] = SAN LAZZARO WOOLF : java.lang.String
+								.stops[41]
+									.stop_lon[0] = 11.409679 : java.lang.Double
+									.stop_sequence[0] = 42 : java.lang.Integer
+									.stop_id[0] = 1057 : java.lang.String
+									.stop_lat[0] = 44.462189 : java.lang.Double
+									.departure_time[0] = 19:03:12 : java.lang.String
+									.stop_name[0] = SAN LAZZARO PISCINA KENNEDY : java.lang.String
+								.stops[42]
+									.stop_lon[0] = 11.41046 : java.lang.Double
+									.stop_sequence[0] = 43 : java.lang.Integer
+									.stop_id[0] = 1059 : java.lang.String
+									.stop_lat[0] = 44.464321 : java.lang.Double
+									.departure_time[0] = 19:04:00 : java.lang.String
+									.stop_name[0] = SAN LAZZARO KENNEDY : java.lang.String
+
+[bus_check.ol] 	14.	> OW	startMonitor			RECEIVED	MSG_ID:3
+						Value:
+							.trip[0]
+								.direction_id[0] = 0 : java.lang.Integer
+								.route_id[0] = 19 : java.lang.String
+								.service_id[0] = 598_94631 : java.lang.String
+								.id[0] = 598_2605635 : java.lang.String
+								.stops[0]
+									.stop_lon[0] = 11.277344 : java.lang.Double
+									.stop_sequence[0] = 1 : java.lang.Integer
+									.stop_id[0] = 6238 : java.lang.String
+									.stop_lat[0] = 44.500038 : java.lang.Double
+									.departure_time[0] = 18:06:00 : java.lang.String
+									.stop_name[0] = CASTELDEBOLE : java.lang.String
+								.stops[1]
+									.stop_lon[0] = 11.275167 : java.lang.Double
+									.stop_sequence[0] = 2 : java.lang.Integer
+									.stop_id[0] = 6236 : java.lang.String
+									.stop_lat[0] = 44.498932 : java.lang.Double
+									.departure_time[0] = 18:06:42 : java.lang.String
+									.stop_name[0] = ROTTA : java.lang.String
+								.stops[2]
+									.stop_lon[0] = 11.275441 : java.lang.Double
+									.stop_sequence[0] = 3 : java.lang.Integer
+									.stop_id[0] = 6234 : java.lang.String
+									.stop_lat[0] = 44.500912 : java.lang.Double
+									.departure_time[0] = 18:07:42 : java.lang.String
+									.stop_name[0] = SALVEMINI : java.lang.String
+								.stops[3]
+									.stop_lon[0] = 11.277596 : java.lang.Double
+									.stop_sequence[0] = 4 : java.lang.Integer
+									.stop_id[0] = 6230 : java.lang.String
+									.stop_lat[0] = 44.503174 : java.lang.Double
+									.departure_time[0] = 18:08:45 : java.lang.String
+									.stop_name[0] = GALEAZZA : java.lang.String
+								.stops[4]
+									.stop_lon[0] = 11.278428 : java.lang.Double
+									.stop_sequence[0] = 5 : java.lang.Integer
+									.stop_id[0] = 6228 : java.lang.String
+									.stop_lat[0] = 44.505196 : java.lang.Double
+									.departure_time[0] = 18:09:31 : java.lang.String
+									.stop_name[0] = DE NICOLA : java.lang.String
+								.stops[5]
+									.stop_lon[0] = 11.279891 : java.lang.Double
+									.stop_sequence[0] = 6 : java.lang.Integer
+									.stop_id[0] = 6226 : java.lang.String
+									.stop_lat[0] = 44.505241 : java.lang.Double
+									.departure_time[0] = 18:09:59 : java.lang.String
+									.stop_name[0] = LA MALFA : java.lang.String
+								.stops[6]
+									.stop_lon[0] = 11.281591 : java.lang.Double
+									.stop_sequence[0] = 7 : java.lang.Integer
+									.stop_id[0] = 6224 : java.lang.String
+									.stop_lat[0] = 44.505047 : java.lang.Double
+									.departure_time[0] = 18:10:24 : java.lang.String
+									.stop_name[0] = EINAUDI : java.lang.String
+								.stops[7]
+									.stop_lon[0] = 11.284555 : java.lang.Double
+									.stop_sequence[0] = 8 : java.lang.Integer
+									.stop_id[0] = 6222 : java.lang.String
+									.stop_lat[0] = 44.506626 : java.lang.Double
+									.departure_time[0] = 18:11:27 : java.lang.String
+									.stop_name[0] = TOGLIATTI PIETRA : java.lang.String
+								.stops[8]
+									.stop_lon[0] = 11.294084 : java.lang.Double
+									.stop_sequence[0] = 9 : java.lang.Integer
+									.stop_id[0] = 6220 : java.lang.String
+									.stop_lat[0] = 44.503784 : java.lang.Double
+									.departure_time[0] = 18:13:46 : java.lang.String
+									.stop_name[0] = CENTRO VITTORIA - MAST : java.lang.String
+								.stops[9]
+									.stop_lon[0] = 11.299116 : java.lang.Double
+									.stop_sequence[0] = 10 : java.lang.Integer
+									.stop_id[0] = 6218 : java.lang.String
+									.stop_lat[0] = 44.502323 : java.lang.Double
+									.departure_time[0] = 18:15:00 : java.lang.String
+									.stop_name[0] = TOGLIATTI : java.lang.String
+								.stops[10]
+									.stop_lon[0] = 11.308243 : java.lang.Double
+									.stop_sequence[0] = 11 : java.lang.Integer
+									.stop_id[0] = 6212 : java.lang.String
+									.stop_lat[0] = 44.501381 : java.lang.Double
+									.departure_time[0] = 18:17:59 : java.lang.String
+									.stop_name[0] = CIVIDALI : java.lang.String
+								.stops[11]
+									.stop_lon[0] = 11.311776 : java.lang.Double
+									.stop_sequence[0] = 12 : java.lang.Integer
+									.stop_id[0] = 6286 : java.lang.String
+									.stop_lat[0] = 44.50156 : java.lang.Double
+									.departure_time[0] = 18:19:00 : java.lang.String
+									.stop_name[0] = MARZABOTTO : java.lang.String
+								.stops[12]
+									.stop_lon[0] = 11.314097 : java.lang.Double
+									.stop_sequence[0] = 13 : java.lang.Integer
+									.stop_id[0] = 6012 : java.lang.String
+									.stop_lat[0] = 44.503819 : java.lang.Double
+									.departure_time[0] = 18:20:00 : java.lang.String
+									.stop_name[0] = OSPEDALE MAGGIORE : java.lang.String
+								.stops[13]
+									.stop_lon[0] = 11.317843 : java.lang.Double
+									.stop_sequence[0] = 14 : java.lang.Integer
+									.stop_id[0] = 6006 : java.lang.String
+									.stop_lat[0] = 44.502472 : java.lang.Double
+									.departure_time[0] = 18:21:23 : java.lang.String
+									.stop_name[0] = TIMAVO : java.lang.String
+								.stops[14]
+									.stop_lon[0] = 11.322191 : java.lang.Double
+									.stop_sequence[0] = 15 : java.lang.Integer
+									.stop_id[0] = 6004 : java.lang.String
+									.stop_lat[0] = 44.500946 : java.lang.Double
+									.departure_time[0] = 18:23:00 : java.lang.String
+									.stop_name[0] = SAFFI : java.lang.String
+								.stops[15]
+									.stop_lon[0] = 11.324828 : java.lang.Double
+									.stop_sequence[0] = 16 : java.lang.Integer
+									.stop_id[0] = 6002 : java.lang.String
+									.stop_lat[0] = 44.500027 : java.lang.Double
+									.departure_time[0] = 18:24:07 : java.lang.String
+									.stop_name[0] = SAN PIO V : java.lang.String
+								.stops[16]
+									.stop_lon[0] = 11.328271 : java.lang.Double
+									.stop_sequence[0] = 17 : java.lang.Integer
+									.stop_id[0] = 620 : java.lang.String
+									.stop_lat[0] = 44.498821 : java.lang.Double
+									.departure_time[0] = 18:25:40 : java.lang.String
+									.stop_name[0] = PORTA SAN FELICE : java.lang.String
+								.stops[17]
+									.stop_lon[0] = 11.332062 : java.lang.Double
+									.stop_sequence[0] = 18 : java.lang.Integer
+									.stop_id[0] = 616 : java.lang.String
+									.stop_lat[0] = 44.497486 : java.lang.Double
+									.departure_time[0] = 18:27:17 : java.lang.String
+									.stop_name[0] = SAN FELICE : java.lang.String
+								.stops[18]
+									.stop_lon[0] = 11.338472 : java.lang.Double
+									.stop_sequence[0] = 19 : java.lang.Integer
+									.stop_id[0] = 604 : java.lang.String
+									.stop_lat[0] = 44.495472 : java.lang.Double
+									.departure_time[0] = 18:30:00 : java.lang.String
+									.stop_name[0] = UGO BASSI : java.lang.String
+								.stops[19]
+									.stop_lon[0] = 11.344916 : java.lang.Double
+									.stop_sequence[0] = 20 : java.lang.Integer
+									.stop_id[0] = 105 : java.lang.String
+									.stop_lat[0] = 44.494453 : java.lang.Double
+									.departure_time[0] = 18:32:00 : java.lang.String
+									.stop_name[0] = RIZZOLI : java.lang.String
+								.stops[20]
+									.stop_lon[0] = 11.35026 : java.lang.Double
+									.stop_sequence[0] = 21 : java.lang.Integer
+									.stop_id[0] = 111 : java.lang.String
+									.stop_lat[0] = 44.492702 : java.lang.Double
+									.departure_time[0] = 18:34:21 : java.lang.String
+									.stop_name[0] = STRADA MAGGIORE : java.lang.String
+								.stops[21]
+									.stop_lon[0] = 11.355041 : java.lang.Double
+									.stop_sequence[0] = 22 : java.lang.Integer
+									.stop_id[0] = 117 : java.lang.String
+									.stop_lat[0] = 44.490891 : java.lang.Double
+									.departure_time[0] = 18:36:30 : java.lang.String
+									.stop_name[0] = TORLEONE : java.lang.String
+								.stops[22]
+									.stop_lon[0] = 11.358295 : java.lang.Double
+									.stop_sequence[0] = 23 : java.lang.Integer
+									.stop_id[0] = 1003 : java.lang.String
+									.stop_lat[0] = 44.48967 : java.lang.Double
+									.departure_time[0] = 18:38:00 : java.lang.String
+									.stop_name[0] = PORTA MAZZINI : java.lang.String
+								.stops[23]
+									.stop_lon[0] = 11.362913 : java.lang.Double
+									.stop_sequence[0] = 24 : java.lang.Integer
+									.stop_id[0] = 1005 : java.lang.String
+									.stop_lat[0] = 44.487911 : java.lang.Double
+									.departure_time[0] = 18:39:59 : java.lang.String
+									.stop_name[0] = ALBERTONI : java.lang.String
+								.stops[24]
+									.stop_lon[0] = 11.365079 : java.lang.Double
+									.stop_sequence[0] = 25 : java.lang.Integer
+									.stop_id[0] = 1009 : java.lang.String
+									.stop_lat[0] = 44.487114 : java.lang.Double
+									.departure_time[0] = 18:40:55 : java.lang.String
+									.stop_name[0] = ALEMANNI : java.lang.String
+								.stops[25]
+									.stop_lon[0] = 11.369396 : java.lang.Double
+									.stop_sequence[0] = 26 : java.lang.Integer
+									.stop_id[0] = 1011 : java.lang.String
+									.stop_lat[0] = 44.485512 : java.lang.Double
+									.departure_time[0] = 18:42:46 : java.lang.String
+									.stop_name[0] = LAURA BASSI : java.lang.String
+								.stops[26]
+									.stop_lon[0] = 11.372252 : java.lang.Double
+									.stop_sequence[0] = 27 : java.lang.Integer
+									.stop_id[0] = 1013 : java.lang.String
+									.stop_lat[0] = 44.484398 : java.lang.Double
+									.departure_time[0] = 18:44:00 : java.lang.String
+									.stop_name[0] = FERMI : java.lang.String
+								.stops[27]
+									.stop_lon[0] = 11.376545 : java.lang.Double
+									.stop_sequence[0] = 28 : java.lang.Integer
+									.stop_id[0] = 1019 : java.lang.String
+									.stop_lat[0] = 44.48275 : java.lang.Double
+									.departure_time[0] = 18:45:35 : java.lang.String
+									.stop_name[0] = MAZZINI STAZIONE : java.lang.String
+								.stops[28]
+									.stop_lon[0] = 11.380459 : java.lang.Double
+									.stop_sequence[0] = 29 : java.lang.Integer
+									.stop_id[0] = 1021 : java.lang.String
+									.stop_lat[0] = 44.481434 : java.lang.Double
+									.departure_time[0] = 18:47:00 : java.lang.String
+									.stop_name[0] = PONTEVECCHIO : java.lang.String
+								.stops[29]
+									.stop_lon[0] = 11.385255 : java.lang.Double
+									.stop_sequence[0] = 30 : java.lang.Integer
+									.stop_id[0] = 1025 : java.lang.String
+									.stop_lat[0] = 44.479332 : java.lang.Double
+									.departure_time[0] = 18:48:22 : java.lang.String
+									.stop_name[0] = VILLA LAURA : java.lang.String
+								.stops[30]
+									.stop_lon[0] = 11.387954 : java.lang.Double
+									.stop_sequence[0] = 31 : java.lang.Integer
+									.stop_id[0] = 1031 : java.lang.String
+									.stop_lat[0] = 44.478367 : java.lang.Double
+									.departure_time[0] = 18:49:07 : java.lang.String
+									.stop_name[0] = EMILIA CALABRIA : java.lang.String
+								.stops[31]
+									.stop_lon[0] = 11.391191 : java.lang.Double
+									.stop_sequence[0] = 32 : java.lang.Integer
+									.stop_id[0] = 1027 : java.lang.String
+									.stop_lat[0] = 44.477165 : java.lang.Double
+									.departure_time[0] = 18:50:00 : java.lang.String
+									.stop_name[0] = ARNO : java.lang.String
+								.stops[32]
+									.stop_lon[0] = 11.395176 : java.lang.Double
+									.stop_sequence[0] = 33 : java.lang.Integer
+									.stop_id[0] = 1033 : java.lang.String
+									.stop_lat[0] = 44.475597 : java.lang.Double
+									.departure_time[0] = 18:51:40 : java.lang.String
+									.stop_name[0] = VILLAGGIO DUE MADONNE : java.lang.String
+								.stops[33]
+									.stop_lon[0] = 11.398598 : java.lang.Double
+									.stop_sequence[0] = 34 : java.lang.Integer
+									.stop_id[0] = 1035 : java.lang.String
+									.stop_lat[0] = 44.474293 : java.lang.Double
+									.departure_time[0] = 18:53:05 : java.lang.String
+									.stop_name[0] = PARCO DEI CEDRI : java.lang.String
+								.stops[34]
+									.stop_lon[0] = 11.40307 : java.lang.Double
+									.stop_sequence[0] = 35 : java.lang.Integer
+									.stop_id[0] = 1037 : java.lang.String
+									.stop_lat[0] = 44.472641 : java.lang.Double
+									.departure_time[0] = 18:54:55 : java.lang.String
+									.stop_name[0] = SAN LAZZARO FIUME SAVENA : java.lang.String
+								.stops[35]
+									.stop_lon[0] = 11.406074 : java.lang.Double
+									.stop_sequence[0] = 36 : java.lang.Integer
+									.stop_id[0] = 1041 : java.lang.String
+									.stop_lat[0] = 44.471516 : java.lang.Double
+									.departure_time[0] = 18:56:10 : java.lang.String
+									.stop_name[0] = SAN LAZZARO VILLA RODRIGUEZ : java.lang.String
+								.stops[36]
+									.stop_lon[0] = 11.408088 : java.lang.Double
+									.stop_sequence[0] = 37 : java.lang.Integer
+									.stop_id[0] = 1043 : java.lang.String
+									.stop_lat[0] = 44.470722 : java.lang.Double
+									.departure_time[0] = 18:57:00 : java.lang.String
+									.stop_name[0] = SAN LAZZARO MUNICIPIO : java.lang.String
+								.stops[37]
+									.stop_lon[0] = 11.412983 : java.lang.Double
+									.stop_sequence[0] = 38 : java.lang.Integer
+									.stop_id[0] = 1045 : java.lang.String
+									.stop_lat[0] = 44.468822 : java.lang.Double
+									.departure_time[0] = 18:58:15 : java.lang.String
+									.stop_name[0] = SAN LAZZARO JUSSI : java.lang.String
+								.stops[38]
+									.stop_lon[0] = 11.412531 : java.lang.Double
+									.stop_sequence[0] = 39 : java.lang.Integer
+									.stop_id[0] = 1053 : java.lang.String
+									.stop_lat[0] = 44.466972 : java.lang.Double
+									.departure_time[0] = 18:59:04 : java.lang.String
+									.stop_name[0] = SAN LAZZARO DI VITTORIO : java.lang.String
+								.stops[39]
+									.stop_lon[0] = 11.411228 : java.lang.Double
+									.stop_sequence[0] = 40 : java.lang.Integer
+									.stop_id[0] = 9235 : java.lang.String
+									.stop_lat[0] = 44.464394 : java.lang.Double
+									.departure_time[0] = 19:00:04 : java.lang.String
+									.stop_name[0] = SAN LAZZARO GIOVANNI XXIII : java.lang.String
+								.stops[40]
+									.stop_lon[0] = 11.411822 : java.lang.Double
+									.stop_sequence[0] = 41 : java.lang.Integer
+									.stop_id[0] = 1055 : java.lang.String
+									.stop_lat[0] = 44.460697 : java.lang.Double
+									.departure_time[0] = 19:01:48 : java.lang.String
+									.stop_name[0] = SAN LAZZARO WOOLF : java.lang.String
+								.stops[41]
+									.stop_lon[0] = 11.409679 : java.lang.Double
+									.stop_sequence[0] = 42 : java.lang.Integer
+									.stop_id[0] = 1057 : java.lang.String
+									.stop_lat[0] = 44.462189 : java.lang.Double
+									.departure_time[0] = 19:03:12 : java.lang.String
+									.stop_name[0] = SAN LAZZARO PISCINA KENNEDY : java.lang.String
+								.stops[42]
+									.stop_lon[0] = 11.41046 : java.lang.Double
+									.stop_sequence[0] = 43 : java.lang.Integer
+									.stop_id[0] = 1059 : java.lang.String
+									.stop_lat[0] = 44.464321 : java.lang.Double
+									.departure_time[0] = 19:04:00 : java.lang.String
+									.stop_name[0] = SAN LAZZARO KENNEDY : java.lang.String
+
+[bus_check.ol] 	15.	< N	startMonitor@MySelf			RECEIVED ACK	MSG_ID:3
+						Value:
+
+[bus_check.ol] 	16.	<< SR	split@StringUtils			SENDING	MSG_ID:4
+						Value: = 18:06:00 : java.lang.String
+							.regex[0] = : : java.lang.String
+
+[bus_check.ol] 	17.	<< SR	split@StringUtils			SENT	MSG_ID:4
+						Value: = 18:06:00 : java.lang.String
+							.regex[0] = : : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	18.	<< SR	split@StringUtils			RECEIVED	MSG_ID:4
+						Value:
+							.result[0] = 18 : java.lang.String
+							.result[1] = 06 : java.lang.String
+							.result[2] = 00 : java.lang.String
+
+[bus_check.ol] 	19.	<< SR	getCurrentTimeMillis@Time			SENDING	MSG_ID:5
+						Value:
+
+[bus_check.ol] 	20.	>> RR	tripMonitor			SENT	MSG_ID:1
+						Value:
+
+[bus_check.ol] 	21.	<< SR	getCurrentTimeMillis@Time			SENT	MSG_ID:5
+						Value:
+
+[bus_check.ol] 	22.	<< SR	getCurrentTimeMillis@Time			RECEIVED	MSG_ID:5
+						Value: = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	23.	<< SR	getCurrentDateValues@Time			SENDING	MSG_ID:6
+						Value:
+
+[bus_check.ol] 	24.	<< SR	getCurrentDateValues@Time			SENT	MSG_ID:6
+						Value:
+
+[bus_check.ol] 	25.	<< SR	getCurrentDateValues@Time			RECEIVED	MSG_ID:6
+						Value:
+							.month[0] = 7 : java.lang.Integer
+							.year[0] = 2016 : java.lang.Integer
+							.day[0] = 15 : java.lang.Integer
+
+[bus_check.ol] 	26.	<< SR	getTimestampFromString@Time			SENDING	MSG_ID:7
+						Value: = 15/7/2016 18:06:00 : java.lang.String
+							.format[0] = dd/MM/yyyy hh:mm:ss : java.lang.String
+
+[bus_check.ol] 	27.	<< SR	getTimestampFromString@Time			SENT	MSG_ID:7
+						Value: = 15/7/2016 18:06:00 : java.lang.String
+							.format[0] = dd/MM/yyyy hh:mm:ss : java.lang.String
+
+[bus_check.ol] 	28.	<< SR	getTimestampFromString@Time			RECEIVED	MSG_ID:7
+						Value: = 1468598760000 : java.lang.Long
+
+[bus_check.ol] 	29.	<< SR	QueryHellobus@HelloBus			SENDING	MSG_ID:8
+						Value:
+							.fermata[0] = 6238 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	30.	<< SR	QueryHellobus@HelloBus			SENT	MSG_ID:8
+						Value:
+							.fermata[0] = 6238 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	31.	<< SR	QueryHellobus@HelloBus			RECEIVED	MSG_ID:8
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	32.	<< SR	println@Console			SENDING	MSG_ID:9
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA)
+[bus_check.ol] 	33.	<< SR	println@Console			SENT	MSG_ID:9
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	34.	<< SR	println@Console			RECEIVED	MSG_ID:9
+						Value:
+
+[bus_check.ol] 	35.	<< SR	replaceAll@StringUtils			SENDING	MSG_ID:10
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	36.	<< SR	replaceAll@StringUtils			SENT	MSG_ID:10
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	37.	<< SR	replaceAll@StringUtils			RECEIVED	MSG_ID:10
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	38.	<< SR	split@StringUtils			SENDING	MSG_ID:11
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+
+[bus_check.ol] 	39.	<< SR	split@StringUtils			SENT	MSG_ID:11
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	40.	<< SR	split@StringUtils			RECEIVED	MSG_ID:11
+						Value:
+							.result[0] = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+							.result[1] =  19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	41.	<< SR	trim@StringUtils			SENDING	MSG_ID:12
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	42.	<< SR	trim@StringUtils			SENT	MSG_ID:12
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	43.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:12
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	44.	<< SR	split@StringUtils			SENDING	MSG_ID:13
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	45.	<< SR	split@StringUtils			SENT	MSG_ID:13
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	46.	<< SR	split@StringUtils			RECEIVED	MSG_ID:13
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = DaSatellite : java.lang.String
+							.result[2] = 18:01 : java.lang.String
+							.result[3] = (Bus6408 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	47.	<< SR	trim@StringUtils			SENDING	MSG_ID:14
+						Value: =  19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	48.	<< SR	trim@StringUtils			SENT	MSG_ID:14
+						Value: =  19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	49.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:14
+						Value: = 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	50.	<< SR	split@StringUtils			SENDING	MSG_ID:15
+						Value: = 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	51.	<< SR	split@StringUtils			SENT	MSG_ID:15
+						Value: = 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	52.	<< SR	split@StringUtils			RECEIVED	MSG_ID:15
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = DaSatellite : java.lang.String
+							.result[2] = 18:20 : java.lang.String
+							.result[3] = (Bus943 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	53.	<< SR	valueToPrettyString@StringUtils			SENDING	MSG_ID:16
+						Value:
+							.19[0]
+								.estimated[0]
+									.time[0] = 18:01 : java.lang.String
+										.bus_name[0] = (Bus6408 : java.lang.String
+									.time[1] = 18:20 : java.lang.String
+										.bus_name[0] = (Bus943 : java.lang.String
+
+[bus_check.ol] 	54.	<< SR	valueToPrettyString@StringUtils			SENT	MSG_ID:16
+						Value:
+							.19[0]
+								.estimated[0]
+									.time[0] = 18:01 : java.lang.String
+										.bus_name[0] = (Bus6408 : java.lang.String
+									.time[1] = 18:20 : java.lang.String
+										.bus_name[0] = (Bus943 : java.lang.String
+
+[bus_check.ol] 	55.	<< SR	valueToPrettyString@StringUtils			RECEIVED	MSG_ID:16
+						Value: = Value
+	.19[0]
+		.estimated[0]
+			.time[0] = 18:01 : java.lang.String
+				.bus_name[0] = (Bus6408 : java.lang.String
+			.time[1] = 18:20 : java.lang.String
+				.bus_name[0] = (Bus943 : java.lang.String
+ : java.lang.String
+
+[bus_check.ol] 	56.	<< SR	println@Console			SENDING	MSG_ID:17
+						Value: = Value
+	.19[0]
+		.estimated[0]
+			.time[0] = 18:01 : java.lang.String
+				.bus_name[0] = (Bus6408 : java.lang.String
+			.time[1] = 18:20 : java.lang.String
+				.bus_name[0] = (Bus943 : java.lang.String
+ : java.lang.String
+
+Value
+	.19[0]
+		.estimated[0]
+			.time[0] = 18:01 : java.lang.String
+				.bus_name[0] = (Bus6408 : java.lang.String
+			.time[1] = 18:20 : java.lang.String
+				.bus_name[0] = (Bus943 : java.lang.String
+
+[bus_check.ol] 	57.	<< SR	println@Console			SENT	MSG_ID:17
+						Value: = Value
+	.19[0]
+		.estimated[0]
+			.time[0] = 18:01 : java.lang.String
+				.bus_name[0] = (Bus6408 : java.lang.String
+			.time[1] = 18:20 : java.lang.String
+				.bus_name[0] = (Bus943 : java.lang.String
+ : java.lang.String
+
+[bus_check.ol] 	58.	<< SR	println@Console			RECEIVED	MSG_ID:17
+						Value:
+
+[bus_check.ol] 	59.	<< SR	println@Console			SENDING	MSG_ID:18
+						Value: = true : java.lang.Boolean
+
+true
+[bus_check.ol] 	60.	<< SR	println@Console			SENT	MSG_ID:18
+						Value: = true : java.lang.Boolean
+
+[bus_check.ol] 	61.	<< SR	println@Console			RECEIVED	MSG_ID:18
+						Value:
+
+[bus_check.ol] 	62.	<< SR	println@Console			SENDING	MSG_ID:19
+						Value: = Bus to follow:(Bus6408. Start monitoring... : java.lang.String
+
+Bus to follow:(Bus6408. Start monitoring...
+[bus_check.ol] 	63.	<< SR	println@Console			SENT	MSG_ID:19
+						Value: = Bus to follow:(Bus6408. Start monitoring... : java.lang.String
+
+[bus_check.ol] 	64.	<< SR	println@Console			RECEIVED	MSG_ID:19
+						Value:
+
+[bus_check.ol] 	65.	<< SR	println@Console			SENDING	MSG_ID:20
+						Value: = Analyzing stop_id 6238 : java.lang.String
+
+Analyzing stop_id 6238
+[bus_check.ol] 	66.	<< SR	println@Console			SENT	MSG_ID:20
+						Value: = Analyzing stop_id 6238 : java.lang.String
+
+[bus_check.ol] 	67.	<< SR	println@Console			RECEIVED	MSG_ID:20
+						Value:
+
+[bus_check.ol] 	68.	<< SR	split@StringUtils			SENDING	MSG_ID:21
+						Value: = 18:06:00 : java.lang.String
+							.regex[0] = : : java.lang.String
+
+[bus_check.ol] 	69.	<< SR	split@StringUtils			SENT	MSG_ID:21
+						Value: = 18:06:00 : java.lang.String
+							.regex[0] = : : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	70.	<< SR	split@StringUtils			RECEIVED	MSG_ID:21
+						Value:
+							.result[0] = 18 : java.lang.String
+							.result[1] = 06 : java.lang.String
+							.result[2] = 00 : java.lang.String
+
+[bus_check.ol] 	71.	<< SR	QueryHellobus@HelloBus			SENDING	MSG_ID:22
+						Value:
+							.fermata[0] = 6238 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	72.	<< SR	QueryHellobus@HelloBus			SENT	MSG_ID:22
+						Value:
+							.fermata[0] = 6238 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	73.	<< SR	QueryHellobus@HelloBus			RECEIVED	MSG_ID:22
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	74.	<< SR	println@Console			SENDING	MSG_ID:23
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA)
+[bus_check.ol] 	75.	<< SR	println@Console			SENT	MSG_ID:23
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	76.	<< SR	println@Console			RECEIVED	MSG_ID:23
+						Value:
+
+[bus_check.ol] 	77.	<< SR	replaceAll@StringUtils			SENDING	MSG_ID:24
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	78.	<< SR	replaceAll@StringUtils			SENT	MSG_ID:24
+						Value: = TperHellobus: 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	79.	<< SR	replaceAll@StringUtils			RECEIVED	MSG_ID:24
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	80.	<< SR	split@StringUtils			SENDING	MSG_ID:25
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+
+[bus_check.ol] 	81.	<< SR	split@StringUtils			SENT	MSG_ID:25
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA), 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	82.	<< SR	split@StringUtils			RECEIVED	MSG_ID:25
+						Value:
+							.result[0] = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+							.result[1] =  19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	83.	<< SR	trim@StringUtils			SENDING	MSG_ID:26
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	84.	<< SR	trim@StringUtils			SENT	MSG_ID:26
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	85.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:26
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	86.	<< SR	split@StringUtils			SENDING	MSG_ID:27
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	87.	<< SR	split@StringUtils			SENT	MSG_ID:27
+						Value: = 19 DaSatellite 18:01 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	88.	<< SR	split@StringUtils			RECEIVED	MSG_ID:27
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = DaSatellite : java.lang.String
+							.result[2] = 18:01 : java.lang.String
+							.result[3] = (Bus6408 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	89.	<< SR	trim@StringUtils			SENDING	MSG_ID:28
+						Value: =  19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	90.	<< SR	trim@StringUtils			SENT	MSG_ID:28
+						Value: =  19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	91.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:28
+						Value: = 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	92.	<< SR	split@StringUtils			SENDING	MSG_ID:29
+						Value: = 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	93.	<< SR	split@StringUtils			SENT	MSG_ID:29
+						Value: = 19 DaSatellite 18:20 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	94.	<< SR	split@StringUtils			RECEIVED	MSG_ID:29
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = DaSatellite : java.lang.String
+							.result[2] = 18:20 : java.lang.String
+							.result[3] = (Bus943 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	95.	<< SR	valueToPrettyString@StringUtils			SENDING	MSG_ID:30
+						Value:
+							.route_id[0] = 19 : java.lang.String
+							.stop_id[0] = 6238 : java.lang.String
+							.hbus[0]
+								.19[0]
+									.estimated[0]
+										.time[0] = 18:01 : java.lang.String
+											.bus_name[0] = (Bus6408 : java.lang.String
+										.time[1] = 18:20 : java.lang.String
+											.bus_name[0] = (Bus943 : java.lang.String
+							.departure_time[0] = 18:06:00 : java.lang.String
+							.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	96.	<< SR	valueToPrettyString@StringUtils			SENT	MSG_ID:30
+						Value:
+							.route_id[0] = 19 : java.lang.String
+							.stop_id[0] = 6238 : java.lang.String
+							.hbus[0]
+								.19[0]
+									.estimated[0]
+										.time[0] = 18:01 : java.lang.String
+											.bus_name[0] = (Bus6408 : java.lang.String
+										.time[1] = 18:20 : java.lang.String
+											.bus_name[0] = (Bus943 : java.lang.String
+							.departure_time[0] = 18:06:00 : java.lang.String
+							.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	97.	<< SR	valueToPrettyString@StringUtils			RECEIVED	MSG_ID:30
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6238 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.estimated[0]
+				.time[0] = 18:01 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+				.time[1] = 18:20 : java.lang.String
+					.bus_name[0] = (Bus943 : java.lang.String
+	.departure_time[0] = 18:06:00 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+[bus_check.ol] 	98.	<< SR	println@Console			SENDING	MSG_ID:31
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6238 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.estimated[0]
+				.time[0] = 18:01 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+				.time[1] = 18:20 : java.lang.String
+					.bus_name[0] = (Bus943 : java.lang.String
+	.departure_time[0] = 18:06:00 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6238 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.estimated[0]
+				.time[0] = 18:01 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+				.time[1] = 18:20 : java.lang.String
+					.bus_name[0] = (Bus943 : java.lang.String
+	.departure_time[0] = 18:06:00 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	99.	<< SR	println@Console			SENT	MSG_ID:31
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6238 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.estimated[0]
+				.time[0] = 18:01 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+				.time[1] = 18:20 : java.lang.String
+					.bus_name[0] = (Bus943 : java.lang.String
+	.departure_time[0] = 18:06:00 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+[bus_check.ol] 	100.	<< SR	println@Console			RECEIVED	MSG_ID:31
+						Value:
+
+[bus_check.ol] 	101.	<< SR	sleep@Time			SENDING	MSG_ID:32
+						Value: = 15000 : java.lang.Integer
+
+[bus_check.ol] 	102.	<< SR	sleep@Time			SENT	MSG_ID:32
+						Value: = 15000 : java.lang.Integer
+
+[bus_check.ol] 	103.	<< SR	sleep@Time			RECEIVED	MSG_ID:32
+						Value:
+
+[bus_check.ol] 	104.	<< SR	println@Console			SENDING	MSG_ID:33
+						Value: = Analyzing stop_id 6236 : java.lang.String
+
+Analyzing stop_id 6236
+[bus_check.ol] 	105.	<< SR	println@Console			SENT	MSG_ID:33
+						Value: = Analyzing stop_id 6236 : java.lang.String
+
+[bus_check.ol] 	106.	<< SR	println@Console			RECEIVED	MSG_ID:33
+						Value:
+
+[bus_check.ol] 	107.	<< SR	split@StringUtils			SENDING	MSG_ID:34
+						Value: = 18:06:42 : java.lang.String
+							.regex[0] = : : java.lang.String
+
+[bus_check.ol] 	108.	<< SR	split@StringUtils			SENT	MSG_ID:34
+						Value: = 18:06:42 : java.lang.String
+							.regex[0] = : : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	109.	<< SR	split@StringUtils			RECEIVED	MSG_ID:34
+						Value:
+							.result[0] = 18 : java.lang.String
+							.result[1] = 06 : java.lang.String
+							.result[2] = 42 : java.lang.String
+
+[bus_check.ol] 	110.	<< SR	QueryHellobus@HelloBus			SENDING	MSG_ID:35
+						Value:
+							.fermata[0] = 6236 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	111.	<< SR	QueryHellobus@HelloBus			SENT	MSG_ID:35
+						Value:
+							.fermata[0] = 6236 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	112.	<< SR	QueryHellobus@HelloBus			RECEIVED	MSG_ID:35
+						Value: = TperHellobus: 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	113.	<< SR	println@Console			SENDING	MSG_ID:36
+						Value: = TperHellobus: 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+TperHellobus: 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA)
+[bus_check.ol] 	114.	<< SR	println@Console			SENT	MSG_ID:36
+						Value: = TperHellobus: 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	115.	<< SR	println@Console			RECEIVED	MSG_ID:36
+						Value:
+
+[bus_check.ol] 	116.	<< SR	replaceAll@StringUtils			SENDING	MSG_ID:37
+						Value: = TperHellobus: 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	117.	<< SR	replaceAll@StringUtils			SENT	MSG_ID:37
+						Value: = TperHellobus: 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	118.	<< SR	replaceAll@StringUtils			RECEIVED	MSG_ID:37
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	119.	<< SR	split@StringUtils			SENDING	MSG_ID:38
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+
+[bus_check.ol] 	120.	<< SR	split@StringUtils			SENT	MSG_ID:38
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA), 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	121.	<< SR	split@StringUtils			RECEIVED	MSG_ID:38
+						Value:
+							.result[0] = 19 DaSatellite 18:09 (Bus6408 CON PEDANA) : java.lang.String
+							.result[1] =  19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	122.	<< SR	trim@StringUtils			SENDING	MSG_ID:39
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	123.	<< SR	trim@StringUtils			SENT	MSG_ID:39
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	124.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:39
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	125.	<< SR	split@StringUtils			SENDING	MSG_ID:40
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	126.	<< SR	split@StringUtils			SENT	MSG_ID:40
+						Value: = 19 DaSatellite 18:09 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	127.	<< SR	split@StringUtils			RECEIVED	MSG_ID:40
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = DaSatellite : java.lang.String
+							.result[2] = 18:09 : java.lang.String
+							.result[3] = (Bus6408 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	128.	<< SR	trim@StringUtils			SENDING	MSG_ID:41
+						Value: =  19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	129.	<< SR	trim@StringUtils			SENT	MSG_ID:41
+						Value: =  19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	130.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:41
+						Value: = 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	131.	<< SR	split@StringUtils			SENDING	MSG_ID:42
+						Value: = 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	132.	<< SR	split@StringUtils			SENT	MSG_ID:42
+						Value: = 19 Previsto 18:13 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	133.	<< SR	split@StringUtils			RECEIVED	MSG_ID:42
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = Previsto : java.lang.String
+							.result[2] = 18:13 : java.lang.String
+							.result[3] = (Bus943 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	134.	<< SR	valueToPrettyString@StringUtils			SENDING	MSG_ID:43
+						Value:
+							.route_id[0] = 19 : java.lang.String
+							.stop_id[0] = 6236 : java.lang.String
+							.hbus[0]
+								.19[0]
+									.scheduled[0]
+										.time[0] = 18:13 : java.lang.String
+									.estimated[0]
+										.time[0] = 18:09 : java.lang.String
+											.bus_name[0] = (Bus6408 : java.lang.String
+							.departure_time[0] = 18:06:42 : java.lang.String
+							.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	135.	<< SR	valueToPrettyString@StringUtils			SENT	MSG_ID:43
+						Value:
+							.route_id[0] = 19 : java.lang.String
+							.stop_id[0] = 6236 : java.lang.String
+							.hbus[0]
+								.19[0]
+									.scheduled[0]
+										.time[0] = 18:13 : java.lang.String
+									.estimated[0]
+										.time[0] = 18:09 : java.lang.String
+											.bus_name[0] = (Bus6408 : java.lang.String
+							.departure_time[0] = 18:06:42 : java.lang.String
+							.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	136.	<< SR	valueToPrettyString@StringUtils			RECEIVED	MSG_ID:43
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6236 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:13 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:09 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:06:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+[bus_check.ol] 	137.	<< SR	println@Console			SENDING	MSG_ID:44
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6236 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:13 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:09 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:06:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6236 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:13 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:09 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:06:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	138.	<< SR	println@Console			SENT	MSG_ID:44
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6236 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:13 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:09 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:06:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+[bus_check.ol] 	139.	<< SR	println@Console			RECEIVED	MSG_ID:44
+						Value:
+
+[bus_check.ol] 	140.	<< SR	sleep@Time			SENDING	MSG_ID:45
+						Value: = 15000 : java.lang.Integer
+
+[bus_check.ol] 	141.	<< SR	sleep@Time			SENT	MSG_ID:45
+						Value: = 15000 : java.lang.Integer
+
+[bus_check.ol] 	142.	<< SR	sleep@Time			RECEIVED	MSG_ID:45
+						Value:
+
+[bus_check.ol] 	143.	<< SR	println@Console			SENDING	MSG_ID:46
+						Value: = Analyzing stop_id 6234 : java.lang.String
+
+Analyzing stop_id 6234
+[bus_check.ol] 	144.	<< SR	println@Console			SENT	MSG_ID:46
+						Value: = Analyzing stop_id 6234 : java.lang.String
+
+[bus_check.ol] 	145.	<< SR	println@Console			RECEIVED	MSG_ID:46
+						Value:
+
+[bus_check.ol] 	146.	<< SR	split@StringUtils			SENDING	MSG_ID:47
+						Value: = 18:07:42 : java.lang.String
+							.regex[0] = : : java.lang.String
+
+[bus_check.ol] 	147.	<< SR	split@StringUtils			SENT	MSG_ID:47
+						Value: = 18:07:42 : java.lang.String
+							.regex[0] = : : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	148.	<< SR	split@StringUtils			RECEIVED	MSG_ID:47
+						Value:
+							.result[0] = 18 : java.lang.String
+							.result[1] = 07 : java.lang.String
+							.result[2] = 42 : java.lang.String
+
+[bus_check.ol] 	149.	<< SR	QueryHellobus@HelloBus			SENDING	MSG_ID:48
+						Value:
+							.fermata[0] = 6234 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	150.	<< SR	QueryHellobus@HelloBus			SENT	MSG_ID:48
+						Value:
+							.fermata[0] = 6234 : java.lang.String
+							.oraHHMM[0] =  : java.lang.String
+							.linea[0] = 19 : java.lang.String
+
+[bus_check.ol] 	151.	<< SR	QueryHellobus@HelloBus			RECEIVED	MSG_ID:48
+						Value: = TperHellobus: 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	152.	<< SR	println@Console			SENDING	MSG_ID:49
+						Value: = TperHellobus: 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+TperHellobus: 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA)
+[bus_check.ol] 	153.	<< SR	println@Console			SENT	MSG_ID:49
+						Value: = TperHellobus: 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.@Attributes[0]
+								.xmlns[0] = https://hellobuswsweb.tper.it/web-services/hellobus.asmx : java.lang.String
+
+[bus_check.ol] 	154.	<< SR	println@Console			RECEIVED	MSG_ID:49
+						Value:
+
+[bus_check.ol] 	155.	<< SR	replaceAll@StringUtils			SENDING	MSG_ID:50
+						Value: = TperHellobus: 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	156.	<< SR	replaceAll@StringUtils			SENT	MSG_ID:50
+						Value: = TperHellobus: 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = TperHellobus:  : java.lang.String
+							.replacement[0] =  : java.lang.String
+
+[bus_check.ol] 	157.	<< SR	replaceAll@StringUtils			RECEIVED	MSG_ID:50
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	158.	<< SR	split@StringUtils			SENDING	MSG_ID:51
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+
+[bus_check.ol] 	159.	<< SR	split@StringUtils			SENT	MSG_ID:51
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA), 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] = , : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	160.	<< SR	split@StringUtils			RECEIVED	MSG_ID:51
+						Value:
+							.result[0] = 19 DaSatellite 18:11 (Bus6408 CON PEDANA) : java.lang.String
+							.result[1] =  19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	161.	<< SR	trim@StringUtils			SENDING	MSG_ID:52
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	162.	<< SR	trim@StringUtils			SENT	MSG_ID:52
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	163.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:52
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	164.	<< SR	split@StringUtils			SENDING	MSG_ID:53
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	165.	<< SR	split@StringUtils			SENT	MSG_ID:53
+						Value: = 19 DaSatellite 18:11 (Bus6408 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	166.	<< SR	split@StringUtils			RECEIVED	MSG_ID:53
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = DaSatellite : java.lang.String
+							.result[2] = 18:11 : java.lang.String
+							.result[3] = (Bus6408 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	167.	<< SR	trim@StringUtils			SENDING	MSG_ID:54
+						Value: =  19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	168.	<< SR	trim@StringUtils			SENT	MSG_ID:54
+						Value: =  19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	169.	<< SR	trim@StringUtils			RECEIVED	MSG_ID:54
+						Value: = 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+
+[bus_check.ol] 	170.	<< SR	split@StringUtils			SENDING	MSG_ID:55
+						Value: = 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+
+[bus_check.ol] 	171.	<< SR	split@StringUtils			SENT	MSG_ID:55
+						Value: = 19 Previsto 18:14 (Bus943 CON PEDANA) : java.lang.String
+							.regex[0] =   : java.lang.String
+							.limit[0]
+
+[bus_check.ol] 	172.	<< SR	split@StringUtils			RECEIVED	MSG_ID:55
+						Value:
+							.result[0] = 19 : java.lang.String
+							.result[1] = Previsto : java.lang.String
+							.result[2] = 18:14 : java.lang.String
+							.result[3] = (Bus943 : java.lang.String
+							.result[4] = CON : java.lang.String
+							.result[5] = PEDANA) : java.lang.String
+
+[bus_check.ol] 	173.	<< SR	valueToPrettyString@StringUtils			SENDING	MSG_ID:56
+						Value:
+							.route_id[0] = 19 : java.lang.String
+							.stop_id[0] = 6234 : java.lang.String
+							.hbus[0]
+								.19[0]
+									.scheduled[0]
+										.time[0] = 18:14 : java.lang.String
+									.estimated[0]
+										.time[0] = 18:11 : java.lang.String
+											.bus_name[0] = (Bus6408 : java.lang.String
+							.departure_time[0] = 18:07:42 : java.lang.String
+							.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	174.	<< SR	valueToPrettyString@StringUtils			SENT	MSG_ID:56
+						Value:
+							.route_id[0] = 19 : java.lang.String
+							.stop_id[0] = 6234 : java.lang.String
+							.hbus[0]
+								.19[0]
+									.scheduled[0]
+										.time[0] = 18:14 : java.lang.String
+									.estimated[0]
+										.time[0] = 18:11 : java.lang.String
+											.bus_name[0] = (Bus6408 : java.lang.String
+							.departure_time[0] = 18:07:42 : java.lang.String
+							.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	175.	<< SR	valueToPrettyString@StringUtils			RECEIVED	MSG_ID:56
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6234 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:14 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:11 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:07:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+[bus_check.ol] 	176.	<< SR	println@Console			SENDING	MSG_ID:57
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6234 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:14 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:11 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:07:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6234 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:14 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:11 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:07:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+
+[bus_check.ol] 	177.	<< SR	println@Console			SENT	MSG_ID:57
+						Value: = Value
+	.route_id[0] = 19 : java.lang.String
+	.stop_id[0] = 6234 : java.lang.String
+	.hbus[0]
+		.19[0]
+			.scheduled[0]
+				.time[0] = 18:14 : java.lang.String
+			.estimated[0]
+				.time[0] = 18:11 : java.lang.String
+					.bus_name[0] = (Bus6408 : java.lang.String
+	.departure_time[0] = 18:07:42 : java.lang.String
+	.timestamp[0] = 1468598421389 : java.lang.Long
+ : java.lang.String
+
+[bus_check.ol] 	178.	<< SR	println@Console			RECEIVED	MSG_ID:57
+						Value:
+
+[bus_check.ol] 	179.	<< SR	sleep@Time			SENDING	MSG_ID:58
+						Value: = 15000 : java.lang.Integer
+

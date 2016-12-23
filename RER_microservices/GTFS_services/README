@@ -1,0 +1,2 @@
+Running docker container
+docker run --name gtfs-core-bologna -h gtfs-core-bologna -p 127.0.0.1:9000:9000 -p 127.0.0.1:9001:9001 --link postgres:postgres -e JDEP_DB_PASSWORD="postgres" -e JDEP_DB_PORT="5432" -e JDEP_DB_USERNAME="postgres" -e JDEP_DB_HOST="postgres" -e JDEP_DB_DATABASE="bologna" gtfs_core

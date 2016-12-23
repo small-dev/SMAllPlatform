@@ -1,0 +1,196 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #f1f1f1;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+
+/* css for animating glyphicon-refresh */
+
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
+}
+
+/* other */
+a {
+  cursor: pointer;
+}
+
+#map {
+  height: 600px;
+  width:700px;
+  margin:1%;
+}
+
+#controlbar-content {
+  overflow-y: auto;
+  height: 500px;
+}
+.stop_id {
+  padding:4px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #143188;
+  color: white;
+  text-align: center;
+}
+
+.stop_id_opposite {
+  padding:4px;
+  border-radius: 5px 5px 5px 5px;
+  color: #143188;
+  border:1px dotted #143188;
+  color: #143188;
+  text-align: center;
+}
+
+.route-name:hover {
+  background-color: #143188;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  cursor:pointer;
+}
+
+.stop-item-label {
+  border-radius: 20px;
+  background-color: #dc5151;
+  color: black;
+  text-align:center;
+}
+.stop-item:hover {
+  border-radius: 20px 20px 20px 20px;
+  background-color: #dc5151;
+  cursor:pointer;
+}
+
+
+
+/*html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family:Arial;
+  font-size:1em;
+}
+
+.close-button {
+  text-align:right;
+  padding:1px;
+  font-size: 0.6em;
+  cursor: pointer;
+}
+
+
+
+.menu-item {
+  font-weight: bold;
+  padding:4px;
+}
+
+.menu-item:hover {
+  color:white;
+  background-color: blue;
+  border-radius: 5px 5px 5px 5px;
+  cursor:pointer;
+}
+
+#panel {
+  height:100%;
+  width: 33%;
+  float:left;
+  padding:1%;
+}
+
+#panel-content {
+  overflow-y: scroll;
+  height: 800px;
+}
+
+#routes_table td {
+  padding:4px;
+}
+
+
+#services {
+  display:none;
+}
+
+.service-item {
+  padding:4px;
+}
+
+.service-item:hover {
+  background-color: #143188;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  cursor:pointer;
+}
+
+
+
+
+
+#stop-times {
+  display: none;
+  background-color: white;
+  border:1px solid black;
+  position: absolute;
+  width: 7%;
+  opacity:0.9;
+  left:10px;
+  top:10px;
+}
+
+#stop-times-list {
+  padding:5px;
+}
+
+
+
+.trip-departure-time {
+  border-radius: 5px 5px 5px 5px;
+  border: 1px solid black;
+}
+*/
