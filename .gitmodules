@@ -2,3 +2,7 @@
 	path = smartcampus.mobilityservice
 	url = https://github.com/smartcommunitylab/smartcampus.mobilityservice.git
 	branch = bologna
+[submodule "sco.viaggia"]
+	path = sco.viaggia
+	url = https://github.com/smartcommunitylab/sco.viaggia
+	branch = bologna
