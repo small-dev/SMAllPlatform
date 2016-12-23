@@ -10,3 +10,6 @@
 	path = OpenTripPlanner
 	url = https://github.com/smartcommunitylab/OpenTripPlanner
 	branch = sco-0.15.0
+[submodule "smartplanner"]
+	path = smartplanner
+	url = https://github.com/smartcommunitylab/smartplanner
