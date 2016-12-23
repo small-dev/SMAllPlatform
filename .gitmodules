@@ -6,3 +6,7 @@
 	path = sco.viaggia
 	url = https://github.com/smartcommunitylab/sco.viaggia
 	branch = bologna
+[submodule "OpenTripPlanner"]
+	path = OpenTripPlanner
+	url = https://github.com/smartcommunitylab/OpenTripPlanner
+	branch = sco-0.15.0
